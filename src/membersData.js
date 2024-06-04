@@ -234,10 +234,10 @@ export const members = [
         "overall": 8.5, // out of 10
     },
     {
-        "name": "Grace Oktaviani",
+        "name": "Grace Octaviani",
         "alias": "Gracie",
         "generation": 11,
-        "picture": 'assets/member/grace_oktaviani.webp', 
+        "picture": 'assets/member/grace_octaviani.webp', 
         "graduated": false,
         "trainee": false,
         "popularity": 8, // out of 10

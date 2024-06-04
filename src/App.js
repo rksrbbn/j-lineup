@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import './App.css';
 import {members} from './membersData';
 import {unitSongs, setlist} from './unitSongs';
-import { Container, FormControl, InputLabel, Select, MenuItem, Button } from '@mui/material';
+import { Container, FormControl, InputLabel, Select, MenuItem, Button, Avatar } from '@mui/material';
 import HeaderApp from './components/HeaderApp';
 
 function App() {
@@ -15,6 +15,8 @@ function App() {
   const handleSongChange = (event) => {
     const selectedSongName = event.target.value;
     setSelectedSong(selectedSongName);
+    setSelectedMembers([]);
+    setSelectedCenter('');
     
     // Temukan unit song yang dipilih
     const selectedUnitSong = unitSongs.find(song => song.name === selectedSongName);
@@ -106,6 +108,7 @@ function App() {
             >
               {members.sort((a, b) => a.alias.localeCompare(b.alias)).map((member) => (
                 <MenuItem key={member.name} value={member.alias}>
+                  <Avatar src={`${process.env.PUBLIC_URL}/${member.picture}`} alt={member.alias} />
                   {member.alias}
                 </MenuItem>
               ))}

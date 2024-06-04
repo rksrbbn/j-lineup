@@ -108,7 +108,7 @@ function App() {
             >
               {members.sort((a, b) => a.alias.localeCompare(b.alias)).map((member) => (
                 <MenuItem key={member.name} value={member.alias}>
-                  <Avatar src={`${process.env.PUBLIC_URL}/${member.picture}`} alt={member.alias} />
+                  <Avatar src={member.picture} alt={member.alias} />
                   {member.alias}
                 </MenuItem>
               ))}

@@ -84,6 +84,7 @@ function App() {
               multiple
               value={selectedMembers}
               onChange={(event) => {
+                setSelectedCenter('');
                 const {
                   target: { value },
                 } = event;
@@ -96,7 +97,15 @@ function App() {
                   setSelectedMembers(selected.slice(0, unitSongMembers));
                 }
               }}
-              renderValue={(selected) => selected.join(', ')}
+              renderValue={(selected) => (
+                <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap' }}>
+                  {selected.map((value) => (
+                    <div key={value} style={{ paddingRight: '5px', paddingLeft:'5px', backgroundColor: '#f50057', borderRadius: '15px', color: 'white', fontSize: '12px' }}>
+                      {value}
+                    </div>
+                  ))}
+                </div>
+              )}
               MenuProps={{
                 PaperProps: {
                   style: {
@@ -124,6 +133,26 @@ function App() {
               labelId="center-member-select-label"
               value={selectedCenter || selectedMembers[0]}
               onChange={(event) => setSelectedCenter(event.target.value)}
+              renderValue={(selected) => (
+                <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap' }}>
+                  {/* Pastikan selected adalah array sebelum memanggil .map */}
+                  {Array.isArray(selected) ? selected.map((value) => (
+                    <div key={value} style={{ paddingRight: '5px', paddingLeft:'5px', backgroundColor: '#f50057', borderRadius: '15px', color: 'white', fontSize: '12px' }}>
+                      {value}
+                    </div>
+                  )) : <div style={{ paddingRight: '5px', paddingLeft:'5px', backgroundColor: '#f50057', borderRadius: '15px', color: 'white', fontSize: '12px' }}>
+                      {selected}
+                    </div>}
+                </div>
+              )}
+              MenuProps={{
+                PaperProps: {
+                  style: {
+                    maxHeight: 48 * 4.5 + 8,
+                    width: 250,
+                  },
+                },
+              }}
               displayEmpty
             >
               {selectedMembers.map((memberAlias) => (
@@ -133,7 +162,9 @@ function App() {
           </FormControl>
         )}
 
-        <Button variant="outlined" color="error" onClick={() => setSelectedMembers([])} style={{ marginTop: '30px' }}>Clear Members</Button>
+        {selectedMembers.length > 0 && (
+          <Button variant="outlined" color="error" onClick={() => setSelectedMembers([])} style={{ marginTop: '30px' }}>Clear Members</Button>
+        )}
        
       </Container>
     </div>

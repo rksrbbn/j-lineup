@@ -1,8 +1,8 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import './App.css';
 import {members} from './membersData';
 import {unitSongs, setlist} from './unitSongs';
-import { Container, FormControl, InputLabel, Select, MenuItem, Button, Avatar } from '@mui/material';
+import { Container, FormControl, InputLabel, Select, MenuItem, Button, Avatar, Alert } from '@mui/material';
 import HeaderApp from './components/HeaderApp';
 
 function App() {
@@ -11,6 +11,16 @@ function App() {
   const [selectedMembers, setSelectedMembers] = useState([]);
   const [unitSongMembers, setUnitSongMembers] = useState(0);
   const [selectedCenter, setSelectedCenter] = useState('');
+  const [error, setError] = useState(false);
+
+  useEffect(() => {
+    if (error) {
+      const timer = setTimeout(() => {
+        setError(false);
+      }, 5000);
+      return () => clearTimeout(timer);
+    }
+  }, [error]);
 
   const handleSongChange = (event) => {
     const selectedSongName = event.target.value;
@@ -30,10 +40,25 @@ function App() {
     }
   };
 
+  const createLineup = () => {
+    // Jika jumlah selectedMembers kurang dari unitsong.total_member, tampilkan pesan error
+    if (selectedMembers.length < unitSongMembers) {
+      setError(true);
+      return;
+    }
+    console.log('members:' + selectedMembers, 'center:' + selectedCenter);
+  };
+
   return (
     <div style={{ backgroundColor: '#FDECEF', minHeight: '100vh', marginTop: 0 }}>
       <HeaderApp />
       <Container className="App">
+      
+      {error && (
+          <Alert severity="error" variant='filled' style={{ marginTop: '20px' }}>
+            Jumlah member tidak boleh kurang dari {unitSongMembers}
+        </Alert>
+      )}
 
         <FormControl fullWidth variant='filled' style={{ marginBottom: '30px', marginTop: '30px' }}>
           <InputLabel id="setlist-select-label">Pilih setlist</InputLabel>
@@ -84,7 +109,9 @@ function App() {
               multiple
               value={selectedMembers}
               onChange={(event) => {
-                setSelectedCenter('');
+                // setSelectedCenter menjadi member pertama
+                setSelectedCenter(selectedMembers[0]);
+
                 const {
                   target: { value },
                 } = event;
@@ -160,6 +187,10 @@ function App() {
               ))}
             </Select>
           </FormControl>
+        )}
+        
+        {selectedMembers.length > 0 && (
+          <Button variant="outlined" color="success" onClick={createLineup} style={{ marginTop: '30px', marginRight: '10px'}}>Create Lineup</Button>
         )}
 
         {selectedMembers.length > 0 && (

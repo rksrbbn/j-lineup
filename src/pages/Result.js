@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { getLineup, clearLineup } from '../db';
 import { Container, Button, Avatar, Typography, Grid } from '@mui/material';
 import HeaderApp from '../components/HeaderApp';
+import FooterApp from '../components/FooterApp';
 import { useNavigate } from 'react-router-dom';
 import { members } from '../membersData';
 import { setlist } from '../unitSongs';
@@ -65,9 +66,14 @@ function Result() {
                 <Typography variant="h6" align="center">
                     {lineup?.[0]?.unitSongSetlist}
                 </Typography>
-                <Grid container spacing={4} justifyContent="center">
+                <Grid container spacing={4} justifyContent="center" style={{ marginTop: '20px' }}>
                     {memberList.map((item) => (
-                        <Grid item xs={4} sm={4} md={4} lg={3} key={item.name} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+                        <Grid item xs={4} sm={4} md={4} lg={3} key={item.name} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', position: 'relative' }}>
+                            {item.alias === lineup?.[0]?.center && (
+                                <div style={{ position: 'absolute', top: 15, right: 0, backgroundColor: 'salmon', padding: '2px 5px', borderRadius: '5px', color: 'white', fontWeight: 'bold', zIndex: 1 }}>
+                                    Center
+                                </div>
+                            )}
                             <Avatar
                                 src={item.picture}
                                 alt={item.alias}
@@ -94,6 +100,7 @@ function Result() {
                 </div>
                 
             </Container>
+            <FooterApp />
         </div>
     );
 }

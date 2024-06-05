@@ -3,6 +3,7 @@ import {members} from '../membersData';
 import {unitSongs, setlist} from '../unitSongs';
 import { Container, FormControl, InputLabel, Select, MenuItem, Button, Avatar, Alert } from '@mui/material';
 import HeaderApp from '../components/HeaderApp';
+import FooterApp from '../components/FooterApp';
 import { addLineup } from '../db';
 import { useNavigate } from 'react-router-dom';
 
@@ -211,6 +212,7 @@ function Pages() {
         )}
        
       </Container>
+      <FooterApp />
     </div>
   );
 }

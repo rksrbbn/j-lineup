@@ -16,7 +16,7 @@ export const unitSongs = [
         total_member: 3,
     },
     {
-        name: 'Joan DArc Didalam Cermin',
+        name: 'Joan of Arc Didalam Cermin',
         setlist: 'Pajama Drive',
         theme: 'cool',
         dance_level: 1,
@@ -36,9 +36,11 @@ export const unitSongs = [
 export const setlist = [
     {
         name: 'Pajama Drive',
+        picture: 'assets/setlist/pajama_drive.png'
     },
     {
         name: 'Aturan Anti Cinta',
+        picture: 'assets/setlist/aturan_anti_cinta.png'
     },
 ];
 

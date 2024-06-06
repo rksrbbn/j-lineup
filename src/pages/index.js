@@ -113,7 +113,12 @@ function Pages() {
                 <em>Pilih lagu</em>
               </MenuItem>
               {unitSongs.filter(song => song.setlist === selectedSetlist).map((filteredSong) => (
-                <MenuItem key={filteredSong.name} value={filteredSong.name}>{filteredSong.name}</MenuItem>
+                <MenuItem key={filteredSong.name} value={filteredSong.name}>
+                  <div style={{ display: 'flex', justifyContent: 'space-between', width: '100%' }}>
+                    <span>{filteredSong.name}</span>
+                    <span style={{ fontSize: '12px' }}>({filteredSong.total_member} member)</span>
+                  </div>
+                </MenuItem>
               ))}
             </Select>
           </FormControl>

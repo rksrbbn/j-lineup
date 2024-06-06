@@ -1,9 +1,12 @@
 import React from 'react';
+import { Typography, Link } from '@mui/material';
 
 function FooterApp() {
   return (
-    <footer style={{ padding: '20px 0', textAlign: 'center', color: 'salmon', fontSize: '14px', width: '100%' }}>
-      MADE WITH <span style={{ color: 'gold' }}>❤️</span> BY <a href='https://twitter.com/rksrbbn' target='_blank' rel='noreferrer' style={{ color: 'gold', textDecoration: 'none' }}>KX</a>
+    <footer style={{ position: 'absolute', bottom: 0, width: '100%', display: 'flex', justifyContent: 'center', paddingBottom: '2rem' }}>
+      <Typography variant="caption" style={{ textAlign: 'center', fontSize: '12px' }}>
+        Made With ❤️ by <Link href="https://twitter.com/rksrbbn" target="_blank" rel="noopener noreferrer">KX</Link>
+      </Typography>
     </footer>
   );
 }

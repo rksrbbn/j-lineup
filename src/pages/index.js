@@ -4,7 +4,7 @@ import {unitSongs, setlist} from '../unitSongs';
 import { Container, FormControl, InputLabel, Select, MenuItem, Button, Avatar, Alert } from '@mui/material';
 import HeaderApp from '../components/HeaderApp';
 import FooterApp from '../components/FooterApp';
-import { addLineup } from '../db';
+import { addLineup, clearLineup } from '../db';
 import { useNavigate } from 'react-router-dom';
 
 function Pages() {
@@ -15,6 +15,10 @@ function Pages() {
   const [selectedCenter, setSelectedCenter] = useState('');
   const [error, setError] = useState(false);
   const navigate = useNavigate();
+  // panggil fungsi clearlineup ketika berada di halaman ini
+  useEffect(() => {
+    clearLineup();
+  }, []);
 
   useEffect(() => {
     if (error) {

@@ -86,7 +86,7 @@ function Result() {
                                 />
                             </Badge>
                             <div style={{ textAlign: 'center', width: '100%'}}>
-                                <Typography variant="h6" component="div" style={{ fontWeight: 'lighter', color: '#db5198',  backgroundColor: '#fff', borderRadius: '4px', padding: '2px' }}>
+                                <Typography variant="h6" component="div" style={{ color: '#db5198',  backgroundColor: '#fff', borderRadius: '4px', padding: '2px' }}>
                                     {item.alias}
                                 </Typography>
                             </div>

@@ -59,13 +59,10 @@ function Result() {
                     <img src={setlistData?.picture} alt="Setlist Image" style={{ width: '100px', height: '100px' }} />
                 </div>
 
-                <Typography variant="h5" align="center" style={{ marginBottom: '2px', fontSize: { xs: '10px', sm: '12px', md: '14px', lg: '16px' } }}>
+                <Typography variant="h5" align="center" style={{ marginBottom: '50px', fontSize: { xs: '10px', sm: '12px', md: '14px', lg: '16px' }, color: '#fff', backgroundColor: '#f50057', borderRadius: '2px', padding: '2px', width: '50%', marginLeft: 'auto', marginRight: 'auto' }}>
                     {lineup?.[0]?.unitSongName}
                 </Typography>
-                {/* <p style={{ textAlign: 'center', margin: '0', fontSize: { xs: '10px', sm: '12px', md: '14px', lg: '16px' } }}>from</p>
-                <Typography variant="h6" align="center" style={{ marginTop: '2px', fontSize: { xs: '10px', sm: '12px', md: '14px', lg: '16px' } }}>
-                    {lineup?.[0]?.unitSongSetlist}
-                </Typography> */}
+                
                 <Grid container spacing={{ xs: 4, sm: 3, md: 2, lg: 1 }} justifyContent="center" style={{ marginTop: '20px', fontSize: { xs: '10px', sm: '12px', md: '14px', lg: '16px' } }}>
                     {memberList.map((item) => (
                         <Grid item xs={4} sm={4} md={4} key={item.name} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', position: 'relative' }}>
@@ -81,15 +78,15 @@ function Result() {
                                 <Avatar
                                     src={item.picture}
                                     alt={item.alias}
-                                    style={{ marginBottom: '20px' }}
+                                    style={{ marginBottom: '20px', border: '2px solid #db5198' }} // Menambahkan border
                                     sx={{
                                         width: { xs: 65, sm: 70, md: 75, lg: 80 },
                                         height: { xs: 65, sm: 70, md: 75, lg: 80 }
                                     }}
                                 />
                             </Badge>
-                            <div style={{ textAlign: 'center', width: '100%' }}>
-                                <Typography variant="h6" component="div" style={{ fontWeight: 'lighter', color: '#db5198' }}>
+                            <div style={{ textAlign: 'center', width: '100%'}}>
+                                <Typography variant="h6" component="div" style={{ fontWeight: 'lighter', color: '#db5198',  backgroundColor: '#fff', borderRadius: '4px', padding: '2px' }}>
                                     {item.alias}
                                 </Typography>
                             </div>
@@ -97,8 +94,8 @@ function Result() {
                     ))}
                 </Grid>
 
-                <div style={{ display: 'flex', justifyContent: 'center', marginTop: '30px' }}>
-                    <Button fullWidth variant='outlined' onClick={backToHome}>back</Button>
+                <div style={{ display: 'flex', justifyContent: 'center', marginTop: '50px' }}>
+                    <Button fullWidth variant='outlined' color='error' onClick={backToHome}>CREATE NEW LINEUP</Button>
                 </div>
                 
             </Container>

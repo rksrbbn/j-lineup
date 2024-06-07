@@ -59,7 +59,7 @@ function Result() {
                     <img src={setlistData?.picture} alt="Setlist Image" style={{ width: '100px', height: '100px' }} />
                 </div>
 
-                <Typography variant="h5" align="center" style={{ marginBottom: '50px', fontSize: { xs: '10px', sm: '12px', md: '14px', lg: '16px' }, color: '#fff', backgroundColor: '#f50057', borderRadius: '2px', padding: '2px', width: '50%', marginLeft: 'auto', marginRight: 'auto' }}>
+                <Typography variant="h5" align="center" style={{ marginBottom: '20px', fontSize: { xs: '10px', sm: '12px', md: '14px', lg: '16px' }, color: '#c4317a', borderRadius: '2px', padding: '2px', width: '50%', marginLeft: 'auto', marginRight: 'auto' }}>
                     {lineup?.[0]?.unitSongName}
                 </Typography>
                 

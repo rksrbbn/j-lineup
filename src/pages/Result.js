@@ -59,16 +59,16 @@ function Result() {
                     <img src={setlistData?.picture} alt="Setlist Image" style={{ width: '100px', height: '100px' }} />
                 </div>
 
-                <Typography variant="h5" align="center">
+                <Typography variant="h5" align="center" style={{ marginBottom: '2px' }}>
                     {lineup?.[0]?.unitSongName}
                 </Typography>
-                
-                <Typography variant="h6" align="center">
+                <p style={{ textAlign: 'center', margin: '0' }}>from</p>
+                <Typography variant="h6" align="center" style={{ marginTop: '2px' }}>
                     {lineup?.[0]?.unitSongSetlist}
                 </Typography>
                 <Grid container spacing={4} justifyContent="center" style={{ marginTop: '20px' }}>
                     {memberList.map((item) => (
-                        <Grid item xs={4} sm={4} md={4} lg={3} key={item.name} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', position: 'relative' }}>
+                        <Grid item xs={4} sm={4} md={4} key={item.name} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', position: 'relative' }}>
                             {item.alias === lineup?.[0]?.center && (
                                 <div style={{ position: 'absolute', top: 15, right: 0, backgroundColor: 'salmon', padding: '2px 5px', borderRadius: '5px', color: 'white', fontWeight: 'bold', zIndex: 1 }}>
                                     Center
@@ -77,19 +77,19 @@ function Result() {
                             <Avatar
                                 src={item.picture}
                                 alt={item.alias}
-                                style={{ width: '80px', height: '80px', marginBottom: '20px' }}
+                                style={{ marginBottom: '20px' }}
                                 sx={{
-                                    width: { xs: 50, sm: 60, md: 70, lg: 80 },
-                                    height: { xs: 50, sm: 60, md: 70, lg: 80 }
+                                    width: { xs: 65, sm: 70, md: 75, lg: 80 },
+                                    height: { xs: 65, sm: 70, md: 75, lg: 80 }
                                 }}
                             />
                             <div style={{ textAlign: 'center', width: '100%' }}>
-                                <Typography variant="h5" component="div">
+                                <Typography variant="h6" component="div" style={{ fontWeight: 'lighter' }}>
                                     {item.alias}
                                 </Typography>
-                                <Typography variant="body2" color="text.secondary">
+                                {/* <Typography variant="body2" color="text.secondary">
                                     Generasi: {item.generation}
-                                </Typography>
+                                </Typography> */}
                             </div>
                         </Grid>
                     ))}

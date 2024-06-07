@@ -109,7 +109,7 @@ function Pages() {
               onChange={handleSongChange}
               displayEmpty
             >
-              {unitSongs.filter(song => song.setlist === selectedSetlist).map((filteredSong) => (
+              {unitSongs.filter(song => song.setlist === selectedSetlist).sort((a, b) => a.name.localeCompare(b.name)).map((filteredSong) => (
                 <MenuItem key={filteredSong.name} value={filteredSong.name}>
                   <div style={{ display: 'flex', justifyContent: 'space-between', width: '100%' }}>
                     <span>{filteredSong.name}</span>

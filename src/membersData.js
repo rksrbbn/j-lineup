@@ -1,4 +1,6 @@
 export const members = [
+
+  // ==== ACTIVE MEMBER ==== //
   {
       "name": "Amanda Sukma",
       "alias": "Amanda",
@@ -359,7 +361,8 @@ export const members = [
       "sexy": 7.5, // out of 10
       "overall": 7.5, // out of 10
   },
-  // RATING CHECKPOINT LYN
+
+  // RATING CHECKPOINT LYN //
   {
     "name": "Kathrina Irene",
     "alias": "Kathrina",
@@ -378,6 +381,603 @@ export const members = [
     "sexy": 7.5, // out of 10
     "overall": 7.5, // out of 10
 },
+  {
+    "name": "Lulu Salsabila",
+    "alias": "lulu",
+    "generation": 8,
+    "picture": 'assets/member/lulu_salsabila.webp', 
+    "graduated": false,
+    "trainee": false,
+    "popularity": 7.5, // out of 10
+    "vocal": 7.5, // out of 10
+    "dance": 8, // out of 10
+    "visual": 7.5, // out of 10
+    "fan_service": 8.5, // out of 10
+    "cute": 8.5, // out of 10
+    "cool": 7, // out of 10
+    "strong": 7, // out of 10
+    "sexy": 7.5, // out of 10
+    "overall": 7.5, // out of 10
+},
+  {
+    "name": "Marsha Lenathea",
+    "alias": "Marsha",
+    "generation": 9,
+    "picture": 'assets/member/marsha_lenathea.webp', 
+    "graduated": false,
+    "trainee": false,
+    "popularity": 7.5, // out of 10
+    "vocal": 7.5, // out of 10
+    "dance": 8, // out of 10
+    "visual": 7.5, // out of 10
+    "fan_service": 8.5, // out of 10
+    "cute": 8.5, // out of 10
+    "cool": 7, // out of 10
+    "strong": 7, // out of 10
+    "sexy": 7.5, // out of 10
+    "overall": 7.5, // out of 10
+},
+  {
+    "name": "Mutiara Azzahra",
+    "alias": "Muthe",
+    "generation": 7,
+    "picture": 'assets/member/mutiara_azzahra.webp', 
+    "graduated": false,
+    "trainee": false,
+    "popularity": 7.5, // out of 10
+    "vocal": 7.5, // out of 10
+    "dance": 8, // out of 10
+    "visual": 7.5, // out of 10
+    "fan_service": 8.5, // out of 10
+    "cute": 8.5, // out of 10
+    "cool": 7, // out of 10
+    "strong": 7, // out of 10
+    "sexy": 7.5, // out of 10
+    "overall": 7.5, // out of 10
+},
+  {
+    "name": "Raisha Syifa",
+    "alias": "Raisha",
+    "generation": 10,
+    "picture": 'assets/member/raisha_syifa.webp', 
+    "graduated": false,
+    "trainee": false,
+    "popularity": 7.5, // out of 10
+    "vocal": 7.5, // out of 10
+    "dance": 8, // out of 10
+    "visual": 7.5, // out of 10
+    "fan_service": 8.5, // out of 10
+    "cute": 8.5, // out of 10
+    "cool": 7, // out of 10
+    "strong": 7, // out of 10
+    "sexy": 7.5, // out of 10
+    "overall": 7.5, // out of 10
+},
+  {
+    "name": "Reva Fidela",
+    "alias": "Adel",
+    "generation": 8,
+    "picture": 'assets/member/reva_fidela.webp', 
+    "graduated": false,
+    "trainee": false,
+    "popularity": 7.5, // out of 10
+    "vocal": 7.5, // out of 10
+    "dance": 8, // out of 10
+    "visual": 7.5, // out of 10
+    "fan_service": 8.5, // out of 10
+    "cute": 8.5, // out of 10
+    "cool": 7, // out of 10
+    "strong": 7, // out of 10
+    "sexy": 7.5, // out of 10
+    "overall": 7.5, // out of 10
+},
+{
+  "name": "Shania Gracia",
+  "alias": "Gracia",
+  "generation": 3,
+  "picture": 'assets/member/shania_gracia.webp', 
+  "graduated": false,
+  "trainee": false,
+  "popularity": 7.5, // out of 10
+  "vocal": 7.5, // out of 10
+  "dance": 8, // out of 10
+  "visual": 7.5, // out of 10
+  "fan_service": 8.5, // out of 10
+  "cute": 8.5, // out of 10
+  "cool": 7, // out of 10
+  "strong": 7, // out of 10
+  "sexy": 7.5, // out of 10
+  "overall": 7.5, // out of 10
+},
+
+// ==== TRAINEE ==== // (NOT RATED)
+{
+  "name": "Abigail Rachel",
+  "alias": "Aralie",
+  "generation": 12,
+  "picture": 'assets/member/abigail_rachel.webp', 
+  "graduated": false,
+  "trainee": true,
+  "popularity": 7.5, // out of 10
+  "vocal": 7.5, // out of 10
+  "dance": 8, // out of 10
+  "visual": 7.5, // out of 10
+  "fan_service": 8.5, // out of 10
+  "cute": 8.5, // out of 10
+  "cool": 7, // out of 10
+  "strong": 7, // out of 10
+  "sexy": 7.5, // out of 10
+  "overall": 7.5, // out of 10
+},
+{
+  "name": "Adeline Wijaya",
+  "alias": "Delynn",
+  "generation": 12,
+  "picture": 'assets/member/adeline_wijaya.webp', 
+  "graduated": false,
+  "trainee": true,
+  "popularity": 7.5, // out of 10
+  "vocal": 7.5, // out of 10
+  "dance": 8, // out of 10
+  "visual": 7.5, // out of 10
+  "fan_service": 8.5, // out of 10
+  "cute": 8.5, // out of 10
+  "cool": 7, // out of 10
+  "strong": 7, // out of 10
+  "sexy": 7.5, // out of 10
+  "overall": 7.5, // out of 10
+},
+{
+  "name": "Aisa Maharani",
+  "alias": "Shasa",
+  "generation": 12,
+  "picture": 'assets/member/aisa_maharani.webp', 
+  "graduated": false,
+  "trainee": true,
+  "popularity": 7.5, // out of 10
+  "vocal": 7.5, // out of 10
+  "dance": 8, // out of 10
+  "visual": 7.5, // out of 10
+  "fan_service": 8.5, // out of 10
+  "cute": 8.5, // out of 10
+  "cool": 7, // out of 10
+  "strong": 7, // out of 10
+  "sexy": 7.5, // out of 10
+  "overall": 7.5, // out of 10
+},
+{
+  "name": "Alya Amanda",
+  "alias": "Alya",
+  "generation": 11,
+  "picture": 'assets/member/alya_amanda.webp', 
+  "graduated": false,
+  "trainee": true,
+  "popularity": 7.5, // out of 10
+  "vocal": 7.5, // out of 10
+  "dance": 8, // out of 10
+  "visual": 7.5, // out of 10
+  "fan_service": 8.5, // out of 10
+  "cute": 8.5, // out of 10
+  "cool": 7, // out of 10
+  "strong": 7, // out of 10
+  "sexy": 7.5, // out of 10
+  "overall": 7.5, // out of 10
+},
+{
+  "name": "Anindya Ramadhani",
+  "alias": "Anin",
+  "generation": 11,
+  "picture": 'assets/member/anindya_ramadhani.webp', 
+  "graduated": false,
+  "trainee": true,
+  "popularity": 7.5, // out of 10
+  "vocal": 7.5, // out of 10
+  "dance": 8, // out of 10
+  "visual": 7.5, // out of 10
+  "fan_service": 8.5, // out of 10
+  "cute": 8.5, // out of 10
+  "cool": 7, // out of 10
+  "strong": 7, // out of 10
+  "sexy": 7.5, // out of 10
+  "overall": 7.5, // out of 10
+},
+{
+  "name": "Aurhel Alana",
+  "alias": "Lana",
+  "generation": 12,
+  "picture": 'assets/member/aurhel_alana.webp', 
+  "graduated": false,
+  "trainee": true,
+  "popularity": 7.5, // out of 10
+  "vocal": 7.5, // out of 10
+  "dance": 8, // out of 10
+  "visual": 7.5, // out of 10
+  "fan_service": 8.5, // out of 10
+  "cute": 8.5, // out of 10
+  "cool": 7, // out of 10
+  "strong": 7, // out of 10
+  "sexy": 7.5, // out of 10
+  "overall": 7.5, // out of 10
+},
+{
+  "name": "Catherina Vallencia",
+  "alias": "Erine",
+  "generation": 12,
+  "picture": 'assets/member/catherina_vallencia.webp', 
+  "graduated": false,
+  "trainee": true,
+  "popularity": 7.5, // out of 10
+  "vocal": 7.5, // out of 10
+  "dance": 8, // out of 10
+  "visual": 7.5, // out of 10
+  "fan_service": 8.5, // out of 10
+  "cute": 8.5, // out of 10
+  "cool": 7, // out of 10
+  "strong": 7, // out of 10
+  "sexy": 7.5, // out of 10
+  "overall": 7.5, // out of 10
+},
+{
+  "name": "Cathleen Nixie",
+  "alias": "Cathy",
+  "generation": 11,
+  "picture": 'assets/member/cathleen_nixie.webp', 
+  "graduated": false,
+  "trainee": true,
+  "popularity": 7.5, // out of 10
+  "vocal": 7.5, // out of 10
+  "dance": 8, // out of 10
+  "visual": 7.5, // out of 10
+  "fan_service": 8.5, // out of 10
+  "cute": 8.5, // out of 10
+  "cool": 7, // out of 10
+  "strong": 7, // out of 10
+  "sexy": 7.5, // out of 10
+  "overall": 7.5, // out of 10
+},
+{
+  "name": "Celline Thefani",
+  "alias": "Elin",
+  "generation": 11,
+  "picture": 'assets/member/celline_thefani.webp', 
+  "graduated": false,
+  "trainee": true,
+  "popularity": 7.5, // out of 10
+  "vocal": 7.5, // out of 10
+  "dance": 8, // out of 10
+  "visual": 7.5, // out of 10
+  "fan_service": 8.5, // out of 10
+  "cute": 8.5, // out of 10
+  "cool": 7, // out of 10
+  "strong": 7, // out of 10
+  "sexy": 7.5, // out of 10
+  "overall": 7.5, // out of 10
+},
+{
+  "name": "Chelsea Davina",
+  "alias": "Chelsea",
+  "generation": 11,
+  "picture": 'assets/member/chelsea_davina.webp', 
+  "graduated": false,
+  "trainee": true,
+  "popularity": 7.5, // out of 10
+  "vocal": 7.5, // out of 10
+  "dance": 8, // out of 10
+  "visual": 7.5, // out of 10
+  "fan_service": 8.5, // out of 10
+  "cute": 8.5, // out of 10
+  "cool": 7, // out of 10
+  "strong": 7, // out of 10
+  "sexy": 7.5, // out of 10
+  "overall": 7.5, // out of 10
+},
+{
+  "name": "Cynthia Yaputera",
+  "alias": "Cynthia",
+  "generation": 11,
+  "picture": 'assets/member/cynthia_yaputera.webp', 
+  "graduated": false,
+  "trainee": true,
+  "popularity": 7.5, // out of 10
+  "vocal": 7.5, // out of 10
+  "dance": 8, // out of 10
+  "visual": 7.5, // out of 10
+  "fan_service": 8.5, // out of 10
+  "cute": 8.5, // out of 10
+  "cool": 7, // out of 10
+  "strong": 7, // out of 10
+  "sexy": 7.5, // out of 10
+  "overall": 7.5, // out of 10
+},
+{
+  "name": "Dena Natalia",
+  "alias": "Danella",
+  "generation": 11,
+  "picture": 'assets/member/dena_natalia.webp', 
+  "graduated": false,
+  "trainee": true,
+  "popularity": 7.5, // out of 10
+  "vocal": 7.5, // out of 10
+  "dance": 8, // out of 10
+  "visual": 7.5, // out of 10
+  "fan_service": 8.5, // out of 10
+  "cute": 8.5, // out of 10
+  "cool": 7, // out of 10
+  "strong": 7, // out of 10
+  "sexy": 7.5, // out of 10
+  "overall": 7.5, // out of 10
+},
+{
+  "name": "Desy Natalia",
+  "alias": "Daisy",
+  "generation": 11,
+  "picture": 'assets/member/desy_natalia.webp', 
+  "graduated": false,
+  "trainee": true,
+  "popularity": 7.5, // out of 10
+  "vocal": 7.5, // out of 10
+  "dance": 8, // out of 10
+  "visual": 7.5, // out of 10
+  "fan_service": 8.5, // out of 10
+  "cute": 8.5, // out of 10
+  "cool": 7, // out of 10
+  "strong": 7, // out of 10
+  "sexy": 7.5, // out of 10
+  "overall": 7.5, // out of 10
+},
+{
+  "name": "Fritzy Rosmerian",
+  "alias": "Fritzy",
+  "generation": 12,
+  "picture": 'assets/member/fritzy_rosmerian.webp', 
+  "graduated": false,
+  "trainee": true,
+  "popularity": 7.5, // out of 10
+  "vocal": 7.5, // out of 10
+  "dance": 8, // out of 10
+  "visual": 7.5, // out of 10
+  "fan_service": 8.5, // out of 10
+  "cute": 8.5, // out of 10
+  "cool": 7, // out of 10
+  "strong": 7, // out of 10
+  "sexy": 7.5, // out of 10
+  "overall": 7.5, // out of 10
+},
+{
+  "name": "Gendis Mayrannisa",
+  "alias": "Gendis",
+  "generation": 11,
+  "picture": 'assets/member/gendis_mayrannisa.webp', 
+  "graduated": false,
+  "trainee": true,
+  "popularity": 7.5, // out of 10
+  "vocal": 7.5, // out of 10
+  "dance": 8, // out of 10
+  "visual": 7.5, // out of 10
+  "fan_service": 8.5, // out of 10
+  "cute": 8.5, // out of 10
+  "cool": 7, // out of 10
+  "strong": 7, // out of 10
+  "sexy": 7.5, // out of 10
+  "overall": 7.5, // out of 10
+},
+{
+  "name": "Hillary Abigail ",
+  "alias": "Lily",
+  "generation": 12,
+  "picture": 'assets/member/hillary_abigail.webp', 
+  "graduated": false,
+  "trainee": true,
+  "popularity": 7.5, // out of 10
+  "vocal": 7.5, // out of 10
+  "dance": 8, // out of 10
+  "visual": 7.5, // out of 10
+  "fan_service": 8.5, // out of 10
+  "cute": 8.5, // out of 10
+  "cool": 7, // out of 10
+  "strong": 7, // out of 10
+  "sexy": 7.5, // out of 10
+  "overall": 7.5, // out of 10
+},
+{
+  "name": "Jazzlyn Trisha",
+  "alias": "Trisha",
+  "generation": 12,
+  "picture": 'assets/member/jazzlyn_trisha.webp', 
+  "graduated": false,
+  "trainee": true,
+  "popularity": 7.5, // out of 10
+  "vocal": 7.5, // out of 10
+  "dance": 8, // out of 10
+  "visual": 7.5, // out of 10
+  "fan_service": 8.5, // out of 10
+  "cute": 8.5, // out of 10
+  "cool": 7, // out of 10
+  "strong": 7, // out of 10
+  "sexy": 7.5, // out of 10
+  "overall": 7.5, // out of 10
+},
+{
+  "name": "Letycia Moreen",
+  "alias": "Moreen",
+  "generation": 12,
+  "picture": 'assets/member/letycia_moreen.webp', 
+  "graduated": false,
+  "trainee": true,
+  "popularity": 7.5, // out of 10
+  "vocal": 7.5, // out of 10
+  "dance": 8, // out of 10
+  "visual": 7.5, // out of 10
+  "fan_service": 8.5, // out of 10
+  "cute": 8.5, // out of 10
+  "cool": 7, // out of 10
+  "strong": 7, // out of 10
+  "sexy": 7.5, // out of 10
+  "overall": 7.5, // out of 10
+},
+{
+  "name": "Michelle Alexandra",
+  "alias": "Michie",
+  "generation": 11,
+  "picture": 'assets/member/michelle_alexandra.webp', 
+  "graduated": false,
+  "trainee": true,
+  "popularity": 7.5, // out of 10
+  "vocal": 7.5, // out of 10
+  "dance": 8, // out of 10
+  "visual": 7.5, // out of 10
+  "fan_service": 8.5, // out of 10
+  "cute": 8.5, // out of 10
+  "cool": 7, // out of 10
+  "strong": 7, // out of 10
+  "sexy": 7.5, // out of 10
+  "overall": 7.5, // out of 10
+},
+{
+  "name": "Michelle Levia",
+  "alias": "Levi",
+  "generation": 12,
+  "picture": 'assets/member/michelle_levia.webp', 
+  "graduated": false,
+  "trainee": true,
+  "popularity": 7.5, // out of 10
+  "vocal": 7.5, // out of 10
+  "dance": 8, // out of 10
+  "visual": 7.5, // out of 10
+  "fan_service": 8.5, // out of 10
+  "cute": 8.5, // out of 10
+  "cool": 7, // out of 10
+  "strong": 7, // out of 10
+  "sexy": 7.5, // out of 10
+  "overall": 7.5, // out of 10
+},
+{
+  "name": "Nayla Suji",
+  "alias": "Nayla",
+  "generation": 12,
+  "picture": 'assets/member/nayla_suji.webp', 
+  "graduated": false,
+  "trainee": true,
+  "popularity": 7.5, // out of 10
+  "vocal": 7.5, // out of 10
+  "dance": 8, // out of 10
+  "visual": 7.5, // out of 10
+  "fan_service": 8.5, // out of 10
+  "cute": 8.5, // out of 10
+  "cool": 7, // out of 10
+  "strong": 7, // out of 10
+  "sexy": 7.5, // out of 10
+  "overall": 7.5, // out of 10
+},
+{
+  "name": "Nina Tutachia",
+  "alias": "Nachia",
+  "generation": 12,
+  "picture": 'assets/member/nina_tutachia.webp', 
+  "graduated": false,
+  "trainee": true,
+  "popularity": 7.5, // out of 10
+  "vocal": 7.5, // out of 10
+  "dance": 8, // out of 10
+  "visual": 7.5, // out of 10
+  "fan_service": 8.5, // out of 10
+  "cute": 8.5, // out of 10
+  "cool": 7, // out of 10
+  "strong": 7, // out of 10
+  "sexy": 7.5, // out of 10
+  "overall": 7.5, // out of 10
+},
+{
+  "name": "Oline Manuel",
+  "alias": "Oline",
+  "generation": 12,
+  "picture": 'assets/member/oline_manuel.webp', 
+  "graduated": false,
+  "trainee": true,
+  "popularity": 7.5, // out of 10
+  "vocal": 7.5, // out of 10
+  "dance": 8, // out of 10
+  "visual": 7.5, // out of 10
+  "fan_service": 8.5, // out of 10
+  "cute": 8.5, // out of 10
+  "cool": 7, // out of 10
+  "strong": 7, // out of 10
+  "sexy": 7.5, // out of 10
+  "overall": 7.5, // out of 10
+},
+{
+  "name": "Regina Wilian",
+  "alias": "Regie",
+  "generation": 12,
+  "picture": 'assets/member/nayla_suji.webp', 
+  "graduated": false,
+  "trainee": true,
+  "popularity": 7.5, // out of 10
+  "vocal": 7.5, // out of 10
+  "dance": 8, // out of 10
+  "visual": 7.5, // out of 10
+  "fan_service": 8.5, // out of 10
+  "cute": 8.5, // out of 10
+  "cool": 7, // out of 10
+  "strong": 7, // out of 10
+  "sexy": 7.5, // out of 10
+  "overall": 7.5, // out of 10
+},
+{
+  "name": "Ribka Budiman",
+  "alias": "Ribka",
+  "generation": 12,
+  "picture": 'assets/member/ribka_budiman.webp', 
+  "graduated": false,
+  "trainee": true,
+  "popularity": 7.5, // out of 10
+  "vocal": 7.5, // out of 10
+  "dance": 8, // out of 10
+  "visual": 7.5, // out of 10
+  "fan_service": 8.5, // out of 10
+  "cute": 8.5, // out of 10
+  "cool": 7, // out of 10
+  "strong": 7, // out of 10
+  "sexy": 7.5, // out of 10
+  "overall": 7.5, // out of 10
+},
+{
+  "name": "Shabilqis Naila",
+  "alias": "Nala",
+  "generation": 12,
+  "picture": 'assets/member/shabilqis_naila.webp', 
+  "graduated": false,
+  "trainee": true,
+  "popularity": 7.5, // out of 10
+  "vocal": 7.5, // out of 10
+  "dance": 8, // out of 10
+  "visual": 7.5, // out of 10
+  "fan_service": 8.5, // out of 10
+  "cute": 8.5, // out of 10
+  "cool": 7, // out of 10
+  "strong": 7, // out of 10
+  "sexy": 7.5, // out of 10
+  "overall": 7.5, // out of 10
+},
+{
+  "name": "Victoria Kimberly",
+  "alias": "Kimmy",
+  "generation": 12,
+  "picture": 'assets/member/victoria_kimberly.webp', 
+  "graduated": false,
+  "trainee": true,
+  "popularity": 7.5, // out of 10
+  "vocal": 7.5, // out of 10
+  "dance": 8, // out of 10
+  "visual": 7.5, // out of 10
+  "fan_service": 8.5, // out of 10
+  "cute": 8.5, // out of 10
+  "cool": 7, // out of 10
+  "strong": 7, // out of 10
+  "sexy": 7.5, // out of 10
+  "overall": 7.5, // out of 10
+},
+
   
 ]
 

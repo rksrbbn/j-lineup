@@ -169,7 +169,7 @@ function Pages() {
 
                     <div style={{ display: 'flex', alignItems: 'center' }}>
                       <Avatar src={member.picture} alt={member.alias} />
-                      {member.alias}
+                      <p style={{marginLeft: '10px'}}>{member.alias}</p>
                     </div>
 
                   </MenuItem>

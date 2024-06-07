@@ -75,7 +75,7 @@ function Pages() {
       )}
 
         <FormControl fullWidth variant='filled' style={{ marginBottom: '30px', marginTop: '30px' }}>
-          <InputLabel id="setlist-select-label">Pilih setlist</InputLabel>
+          <InputLabel id="setlist-select-label" sx={{ fontSize: { xs: '10px', sm: '12px', md: '14px', lg: '16px' } }}>Pilih setlist</InputLabel>
           <Select
             labelId="setlist-select-label"
             value={selectedSetlist}
@@ -88,9 +88,7 @@ function Pages() {
             displayEmpty
             renderValue={(selected) => selected}
           >
-            <MenuItem value="">
-              <em>Pilih setlist</em>
-            </MenuItem>
+            
             {setlist.map((setlistItem) => (
               <MenuItem key={setlistItem.name} value={setlistItem.name}>
                 <Avatar src={setlistItem.picture} alt={setlistItem.name} style={{ marginRight: '10px' }} />
@@ -102,7 +100,7 @@ function Pages() {
 
         {selectedSetlist && (
           <FormControl fullWidth variant='filled' style={{ marginBottom: '30px' }}>
-            <InputLabel id="song-select-label">Pilih lagu</InputLabel>
+            <InputLabel id="song-select-label" sx={{ fontSize: { xs: '10px', sm: '12px', md: '14px', lg: '16px' } }}>Pilih lagu</InputLabel>
             <Select
               labelId="song-select-label"
               value={selectedSong}
@@ -112,8 +110,8 @@ function Pages() {
               {unitSongs.filter(song => song.setlist === selectedSetlist).sort((a, b) => a.name.localeCompare(b.name)).map((filteredSong) => (
                 <MenuItem key={filteredSong.name} value={filteredSong.name}>
                   <div style={{ display: 'flex', justifyContent: 'space-between', width: '100%' }}>
-                    <span>{filteredSong.name}</span>
-                    <span style={{ fontSize: '12px' }}>({filteredSong.total_member} member)</span>
+                    <span style={{ fontSize: { xs: '10px', sm: '12px', md: '14px', lg: '16px' } }}>{filteredSong.name}</span>
+                    {/* <span style={{ fontSize: { xs: '10px', sm: '12px', md: '14px', lg: '16px' } }}>({filteredSong.total_member} member)</span> */}
                   </div>
                 </MenuItem>
               ))}
@@ -123,7 +121,7 @@ function Pages() {
         
         {selectedSetlist && selectedSong && (
           <FormControl fullWidth variant='filled' style={{ marginBottom: '30px' }}>
-            <InputLabel id="member-multi-select-label">Pilih member</InputLabel>
+            <InputLabel id="member-multi-select-label" sx={{ fontSize: { xs: '10px', sm: '12px', md: '14px', lg: '16px' } }}>Pilih member</InputLabel>
             <Select
               labelId="member-multi-select-label"
               multiple
@@ -147,7 +145,7 @@ function Pages() {
               renderValue={(selected) => (
                 <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap' }}>
                   {selected.map((value) => (
-                    <div key={value} style={{ paddingRight: '5px', paddingLeft:'5px', backgroundColor: '#f50057', borderRadius: '15px', color: 'white', fontSize: '12px' }}>
+                    <div key={value} style={{ paddingRight: '5px', paddingLeft:'5px', backgroundColor: '#f50057', borderRadius: '15px', color: 'white', fontSize: { xs: '10px', sm: '12px', md: '14px', lg: '16px' } }}>
                       {value}
                     </div>
                   ))}
@@ -175,7 +173,7 @@ function Pages() {
 
         {selectedSetlist && selectedSong && selectedMembers.length > 0 && (
           <FormControl fullWidth variant='filled'>
-            <InputLabel id="center-member-select-label">Pilih Center</InputLabel>
+            <InputLabel id="center-member-select-label" sx={{ fontSize: { xs: '10px', sm: '12px', md: '14px', lg: '16px' } }}>Pilih Center</InputLabel>
             <Select
               labelId="center-member-select-label"
               value={selectedCenter || selectedMembers[0]}
@@ -184,10 +182,10 @@ function Pages() {
                 <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap' }}>
                   {/* Pastikan selected adalah array sebelum memanggil .map */}
                   {Array.isArray(selected) ? selected.map((value) => (
-                    <div key={value} style={{ paddingRight: '5px', paddingLeft:'5px', backgroundColor: '#f50057', borderRadius: '15px', color: 'white', fontSize: '12px' }}>
+                    <div key={value} style={{ paddingRight: '5px', paddingLeft:'5px', backgroundColor: '#f50057', borderRadius: '15px', color: 'white', fontSize: { xs: '10px', sm: '12px', md: '14px', lg: '16px' } }}>
                       {value}
                     </div>
-                  )) : <div style={{ paddingRight: '5px', paddingLeft:'5px', backgroundColor: '#f50057', borderRadius: '15px', color: 'white', fontSize: '12px' }}>
+                  )) : <div style={{ paddingRight: '5px', paddingLeft:'5px', backgroundColor: '#f50057', borderRadius: '15px', color: 'white', fontSize: { xs: '10px', sm: '12px', md: '14px', lg: '16px' } }}>
                       {selected}
                     </div>}
                 </div>

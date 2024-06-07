@@ -1,4 +1,6 @@
 export const unitSongs = [
+
+    // PAJAMA DRIVE
     {
         name: 'Air Mata Perasaan yang Tak Tersampaikan',
         setlist: 'Pajama Drive',
@@ -47,6 +49,8 @@ export const unitSongs = [
         vocal_level: 1,
         total_member: 5,
     },
+
+    // ATURAN ANTI CINTA
     {
         name: 'Virus Tipe Hati',
         setlist: 'Aturan Anti Cinta',
@@ -87,6 +91,48 @@ export const unitSongs = [
         vocal_level: 1,
         total_member: 5,
     },
+
+    // INGIN BERTEMU
+    {
+        name: 'Boneka yang Sedih',
+        setlist: 'Ingin Bertemu',
+        theme: 'cool',
+        dance_level: 1,
+        vocal_level: 1,
+        total_member: 4,
+    },
+    {
+        name: 'Air Mata Shounan',
+        setlist: 'Ingin Bertemu',
+        theme: 'cool',
+        dance_level: 1,
+        vocal_level: 1,
+        total_member: 4,
+    },
+    {
+        name: 'Cherry Tepi Pantai',
+        setlist: 'Ingin Bertemu',
+        theme: 'cool',
+        dance_level: 1,
+        vocal_level: 1,
+        total_member: 4,
+    },
+    {
+        name: 'Kaca Berbentuk I LOVE YOU',
+        setlist: 'Ingin Bertemu',
+        theme: 'cool',
+        dance_level: 1,
+        vocal_level: 1,
+        total_member: 4,
+    },
+    {
+        name: 'Rencana Cinta',
+        setlist: 'Ingin Bertemu',
+        theme: 'cool',
+        dance_level: 1,
+        vocal_level: 1,
+        total_member: 7,
+    },
 ];
 
 export const setlist = [
@@ -97,6 +143,10 @@ export const setlist = [
     {
         name: 'Aturan Anti Cinta',
         picture: 'assets/setlist/aturan_anti_cinta.png'
+    },
+    {
+        name: 'Ingin Bertemu',
+        picture: 'assets/setlist/ingin_bertemu.png'
     },
 ];
 

@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import {members} from '../membersData';
 import {unitSongs, setlist} from '../unitSongs';
-import { Container, FormControl, InputLabel, Select, MenuItem, Button, Avatar, Alert } from '@mui/material';
+import { Container, FormControl, InputLabel, Select, MenuItem, Button, Avatar, Alert, Typography } from '@mui/material';
 import HeaderApp from '../components/HeaderApp';
 import FooterApp from '../components/FooterApp';
 import { addLineup, clearLineup } from '../db';
@@ -68,6 +68,9 @@ function Pages() {
       <HeaderApp />
       <Container className="App" maxWidth="sm">
 
+        <Typography variant="h4" component="h1" gutterBottom style={{ marginTop: '20px', textAlign: 'center', fontFamily: 'Poppins' }}>
+          Start Creating Your Lineup!
+        </Typography>
       {error && (
           <Alert severity="error" variant='filled' style={{ marginTop: '20px' }}>
             Jumlah member tidak boleh kurang dari {unitSongMembers}
@@ -75,7 +78,7 @@ function Pages() {
       )}
 
         <FormControl fullWidth variant='filled' style={{ marginBottom: '30px', marginTop: '30px' }}>
-          <InputLabel id="setlist-select-label" sx={{ fontSize: { xs: '10px', sm: '12px', md: '14px', lg: '16px' } }}>Pilih setlist</InputLabel>
+          <InputLabel id="setlist-select-label" sx={{ fontSize: { xs: '10px', sm: '12px', md: '14px', lg: '16px' } }}>Setlist</InputLabel>
           <Select
             labelId="setlist-select-label"
             value={selectedSetlist}
@@ -101,7 +104,7 @@ function Pages() {
         {selectedSetlist && (
           
           <FormControl fullWidth variant='filled' style={{ marginBottom: '30px' }}>
-            <InputLabel id="song-select-label" sx={{ fontSize: { xs: '10px', sm: '12px', md: '14px', lg: '16px' } }}>Pilih lagu</InputLabel>
+            <InputLabel id="song-select-label" sx={{ fontSize: { xs: '10px', sm: '12px', md: '14px', lg: '16px' } }}>Unit Song</InputLabel>
             <Select
               labelId="song-select-label"
               value={selectedSong}
@@ -125,7 +128,7 @@ function Pages() {
           <small data-testid="WarningIcon" style={{ color: 'red' }}>*Anda harus memilih {unitSongMembers} member untuk lagu ini.</small>
          
           <FormControl fullWidth variant='filled' style={{ marginBottom: '30px' }}>
-              <InputLabel id="member-multi-select-label" sx={{ fontSize: { xs: '10px', sm: '12px', md: '14px', lg: '16px' } }}>Pilih member</InputLabel>
+              <InputLabel id="member-multi-select-label" sx={{ fontSize: { xs: '10px', sm: '12px', md: '14px', lg: '16px' } }}>Members</InputLabel>
               <Select
                 labelId="member-multi-select-label"
                 multiple
@@ -167,9 +170,12 @@ function Pages() {
                 {members.sort((a, b) => a.alias.localeCompare(b.alias)).map((member) => (
                   <MenuItem key={member.name} value={member.alias}>
 
-                    <div style={{ display: 'flex', alignItems: 'center' }}>
-                      <Avatar src={member.picture} alt={member.alias} />
-                      <p style={{marginLeft: '10px'}}>{member.alias}</p>
+                    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', width: '100%' }}>
+                      <div style={{ display: 'flex', alignItems: 'center' }}>
+                        <Avatar src={member.picture} alt={member.alias} />
+                        <p style={{ marginLeft: '10px' }}>{member.alias}</p>
+                      </div>
+                      {member.trainee ? <img src="assets/icons/trainee_icon.png" alt="Trainee" style={{ width: '48px' }} /> : <img src="assets/icons/member_icon.png" alt="Member" style={{ width: '48px' }} />}
                     </div>
 
                   </MenuItem>
@@ -181,7 +187,7 @@ function Pages() {
 
         {selectedSetlist && selectedSong && selectedMembers.length > 0 && (
           <FormControl fullWidth variant='filled'>
-            <InputLabel id="center-member-select-label" sx={{ fontSize: { xs: '10px', sm: '12px', md: '14px', lg: '16px' } }}>Pilih Center</InputLabel>
+            <InputLabel id="center-member-select-label" sx={{ fontSize: { xs: '10px', sm: '12px', md: '14px', lg: '16px' } }}>Center</InputLabel>
             <Select
               labelId="center-member-select-label"
               value={selectedCenter || selectedMembers[0]}

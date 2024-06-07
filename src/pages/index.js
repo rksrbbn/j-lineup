@@ -109,9 +109,6 @@ function Pages() {
               onChange={handleSongChange}
               displayEmpty
             >
-              <MenuItem value="">
-                <em>Pilih lagu</em>
-              </MenuItem>
               {unitSongs.filter(song => song.setlist === selectedSetlist).map((filteredSong) => (
                 <MenuItem key={filteredSong.name} value={filteredSong.name}>
                   <div style={{ display: 'flex', justifyContent: 'space-between', width: '100%' }}>

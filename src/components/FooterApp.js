@@ -3,7 +3,7 @@ import { Typography, Link } from '@mui/material';
 
 function FooterApp() {
   return (
-    <footer style={{ position: 'absolute', bottom: 0, width: '100%', display: 'flex', justifyContent: 'center', paddingBottom: '2rem' }}>
+    <footer style={{ width: '100%', display: 'flex', justifyContent: 'center', padding: '2rem 0', marginTop: 'auto' }}>
       <Typography variant="caption" style={{ textAlign: 'center', fontSize: '12px' }}>
         Made With ❤️ by <Link href="https://twitter.com/rksrbbn" target="_blank" rel="noopener noreferrer">KX</Link>
       </Typography>

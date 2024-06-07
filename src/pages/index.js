@@ -64,7 +64,7 @@ function Pages() {
   };
 
   return (
-    <div style={{ backgroundColor: '#FDECEF', minHeight: '100vh', marginTop: 0 }}>
+    <div style={{ backgroundColor: '#FDECEF', minHeight: '100vh', marginTop: 0, display: 'flex', flexDirection: 'column' }}>
       <HeaderApp />
       <Container className="App" maxWidth="sm">
 

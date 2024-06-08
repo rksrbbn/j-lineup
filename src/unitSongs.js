@@ -23,7 +23,7 @@ export const unitSongs = [
         theme: 'cute',
         dance_level: 1,
         vocal_level: 1,
-        total_member: 5,
+        total_member: 3,
     },
     {
         name: 'Ekor Malaikat',

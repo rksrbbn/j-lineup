@@ -70,9 +70,9 @@ function Result() {
                     )}
                 </div>
                 
-                <Grid container spacing={{ xs: 4, sm: 3, md: 3, lg: 3 }} justifyContent="center" style={{ marginTop: '20px', fontSize: { xs: '10px', sm: '12px', md: '14px', lg: '16px' } }}>
+                <Grid container spacing={2} justifyContent="center" style={{ marginTop: '20px', fontSize: { xs: '10px', sm: '12px', md: '14px', lg: '16px' } }}>
                     {memberList.map((item) => (
-                        <Grid item xs={4} sm={4} md={4} key={item.name} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', position: 'relative' }}>
+                        <Grid item xs={3} sm={3} md={3} lg={3} key={item.name} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', position: 'relative' }}>
                             <Badge
                                 badgeContent="C"
                                 color="error" // Ubah warna menjadi merah

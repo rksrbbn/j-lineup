@@ -909,7 +909,7 @@ export const members = [
   "name": "Regina Wilian",
   "alias": "Regie",
   "generation": 12,
-  "picture": 'assets/member/nayla_suji.webp', 
+  "picture": 'assets/member/regina_wilian.webp', 
   "graduated": false,
   "trainee": true,
   "popularity": 7.5, // out of 10

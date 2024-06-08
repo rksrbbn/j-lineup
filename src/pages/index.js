@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import {members} from '../membersData';
 import {unitSongs, setlist} from '../unitSongs';
-import { Container, FormControl, InputLabel, Select, MenuItem, Button, Avatar, Alert, Typography } from '@mui/material';
+import { Container, FormControl, InputLabel, Select, MenuItem, Button, Avatar, Alert, Typography, TextField } from '@mui/material';
 import HeaderApp from '../components/HeaderApp';
 import FooterApp from '../components/FooterApp';
 import { addLineup, clearLineup } from '../db';
@@ -13,6 +13,7 @@ function Pages() {
   const [selectedMembers, setSelectedMembers] = useState([]);
   const [unitSongMembers, setUnitSongMembers] = useState(0);
   const [selectedCenter, setSelectedCenter] = useState('');
+  const [creatorName, setCreatorName] = useState('');
   const [error, setError] = useState(false);
   const navigate = useNavigate();
   // panggil fungsi clearlineup ketika berada di halaman ini
@@ -57,7 +58,8 @@ function Pages() {
       unitSongName: selectedSong,
       unitSongSetlist: selectedSetlist,
       members: selectedMembers.join(', '),
-      center: selectedCenter
+      center: selectedCenter,
+      creatorName: creatorName
     };
     addLineup(lineup);
     navigate('/result');
@@ -186,7 +188,7 @@ function Pages() {
         )}
 
         {selectedSetlist && selectedSong && selectedMembers.length > 0 && (
-          <FormControl fullWidth variant='filled'>
+          <FormControl fullWidth variant='filled' style={{ marginBottom: '30px' }}>
             <InputLabel id="center-member-select-label" sx={{ fontSize: { xs: '10px', sm: '12px', md: '14px', lg: '16px' } }}>Center</InputLabel>
             <Select
               labelId="center-member-select-label"
@@ -218,6 +220,12 @@ function Pages() {
                 <MenuItem key={memberAlias} value={memberAlias}>{memberAlias}</MenuItem>
               ))}
             </Select>
+          </FormControl>
+        )}
+
+        {selectedSetlist && selectedSong && selectedMembers.length > 0 && (
+          <FormControl fullWidth variant='filled' style={{ marginBottom: '30px' }}>
+            <TextField id="filled-basic" label="Creator Name (Optional)" variant="filled" onChange={(event) => setCreatorName(event.target.value)} />
           </FormControl>
         )}
         

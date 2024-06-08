@@ -31,17 +31,19 @@ function Result() {
         const fetchData = async () => {
           try {
             const data = await getLineup();
-            setLineup(data);
             if (data.length > 0) {
-              const firstData = data[0];
-              const membersToArray = firstData.members.split(',');
-              const memberObjects = membersToArray.map(alias => {
+                setLineup(data);
+                const firstData = data[0];
+                const membersToArray = firstData.members.split(',');
+                const memberObjects = membersToArray.map(alias => {
                   const memberData = searchMemberDataByAlias(alias.trim()); // Trim alias untuk menghapus spasi ekstra
                   return memberData ? memberData : { alias: alias, name: "Unknown", role: "Unknown" };
                 });
                 setMemberList(memberObjects);
                 const setlistData = searchSetlist(firstData.unitSongSetlist);
                 setSetlistData(setlistData);
+            } else {
+              navigate('/');
             }
           } catch (error) {
             console.error('Error fetching data:', error);
@@ -59,9 +61,14 @@ function Result() {
                     <img src={setlistData?.picture} alt="Setlist Image" style={{ width: '100px', height: '100px' }} />
                 </div>
 
-                <Typography variant="h5" align="center" style={{ marginBottom: '20px', fontSize: { xs: '10px', sm: '12px', md: '14px', lg: '16px' }, color: '#c4317a', borderRadius: '2px', padding: '2px', width: '50%', marginLeft: 'auto', marginRight: 'auto' }}>
-                    {lineup?.[0]?.unitSongName}
-                </Typography>
+                <div style={{ marginBottom: '20px', textAlign: 'center' }}>
+                    <Typography variant="h6" style={{ color: '#c4317a', borderRadius: '2px', padding: '2px', width: '50%', margin: 'auto' }}>
+                        {lineup?.[0]?.unitSongName}
+                    </Typography>
+                    {lineup?.[0]?.creatorName != '' && (
+                        <p style={{ color: '#c4317a', fontSize: '12px' }}>Lineup by {lineup?.[0]?.creatorName}</p>
+                    )}
+                </div>
                 
                 <Grid container spacing={{ xs: 4, sm: 3, md: 3, lg: 3 }} justifyContent="center" style={{ marginTop: '20px', fontSize: { xs: '10px', sm: '12px', md: '14px', lg: '16px' } }}>
                     {memberList.map((item) => (
@@ -80,13 +87,13 @@ function Result() {
                                     alt={item.alias}
                                     style={{ marginBottom: '20px', border: '2px solid #db5198' }} // Menambahkan border
                                     sx={{
-                                        width: { xs: 65, sm: 70, md: 75, lg: 80 },
-                                        height: { xs: 65, sm: 70, md: 75, lg: 80 }
+                                        width: { xs: 60, sm: 65, md: 75, lg: 80 },
+                                        height: { xs: 60, sm: 65, md: 75, lg: 80 }
                                     }}
                                 />
                             </Badge>
                             <div style={{ textAlign: 'center', width: '100%'}}>
-                                <Typography variant="h6" component="div" style={{ color: '#db5198',  backgroundColor: '#fff', borderRadius: '4px', padding: '2px' }}>
+                                <Typography component="div" style={{ color: '#db5198',  backgroundColor: '#fff', borderRadius: '4px', padding: '2px', fontSize: { xs: '10px', sm: '12px', md: '14px', lg: '16px' } }}>
                                     {item.alias}
                                 </Typography>
                             </div>

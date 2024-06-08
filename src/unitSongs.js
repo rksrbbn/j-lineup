@@ -10,14 +10,6 @@ export const unitSongs = [
         total_member: 2,
     },
     {
-        name: 'Putri Duyung yang Sedang Sedih',
-        setlist: 'Pajama Drive',
-        theme: 'cute',
-        dance_level: 1,
-        vocal_level: 1,
-        total_member: 5,
-    },
-    {
         name: 'Pajama Drive',
         setlist: 'Pajama Drive',
         theme: 'cute',
@@ -81,7 +73,7 @@ export const unitSongs = [
         theme: 'cute',
         dance_level: 1,
         vocal_level: 1,
-        total_member: 5,
+        total_member: 3,
     },
     {
         name: 'Mawar Natal Musim Panas',
@@ -89,7 +81,7 @@ export const unitSongs = [
         theme: 'cute',
         dance_level: 1,
         vocal_level: 1,
-        total_member: 5,
+        total_member: 4,
     },
 
     // INGIN BERTEMU
@@ -107,7 +99,7 @@ export const unitSongs = [
         theme: 'cool',
         dance_level: 1,
         vocal_level: 1,
-        total_member: 4,
+        total_member: 5,
     },
     {
         name: 'Cherry Tepi Pantai',
@@ -127,6 +119,14 @@ export const unitSongs = [
     },
     {
         name: 'Rencana Cinta',
+        setlist: 'Ingin Bertemu',
+        theme: 'cool',
+        dance_level: 1,
+        vocal_level: 1,
+        total_member: 7,
+    },
+    {
+        name: 'Peluklah Aku dari Belakang',
         setlist: 'Ingin Bertemu',
         theme: 'cool',
         dance_level: 1,
@@ -175,6 +175,48 @@ export const unitSongs = [
         vocal_level: 1,
         total_member: 5,
     },
+
+    // TUNAS DI BALIK SERAGAM
+    {
+        name: 'Lebih dari Memori',
+        setlist: 'Tunas di Balik Seragam',
+        theme: 'cool',
+        dance_level: 1,
+        vocal_level: 1,
+        total_member: 3,
+    },
+    {
+        name: 'Serigala dan Pride',
+        setlist: 'Tunas di Balik Seragam',
+        theme: 'cool',
+        dance_level: 1,
+        vocal_level: 1,
+        total_member: 2,
+    },
+    {
+        name: 'Indra Keenam Seorang Gadis',
+        setlist: 'Tunas di Balik Seragam',
+        theme: 'cool',
+        dance_level: 1,
+        vocal_level: 1,
+        total_member: 5,
+    },
+    {
+        name: 'Stasiun Daun Kering',
+        setlist: 'Tunas di Balik Seragam',
+        theme: 'cool',
+        dance_level: 1,
+        vocal_level: 1,
+        total_member: 1,
+    },
+    {
+        name: 'Kaleidoscope',
+        setlist: 'Tunas di Balik Seragam',
+        theme: 'cool',
+        dance_level: 1,
+        vocal_level: 1,
+        total_member: 5,
+    },
 ];
 
 export const setlist = [
@@ -187,12 +229,16 @@ export const setlist = [
         picture: 'assets/setlist/aturan_anti_cinta.png'
     },
     {
-        name: 'Ingin Bertemu',
-        picture: 'assets/setlist/ingin_bertemu.png'
+        name: 'Tunas di Balik Seragam',
+        picture: 'assets/setlist/tunas_di_balik_seragam.png'
     },
     {
         name: 'Cara Meminum Ramune',
         picture: 'assets/setlist/cara_meminum_ramune.png'
-    }
+    },
+    {
+        name: 'Ingin Bertemu',
+        picture: 'assets/setlist/ingin_bertemu.png'
+    },
 ];
 

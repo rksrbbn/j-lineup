@@ -58,7 +58,7 @@ function Result() {
             <Container className="App" maxWidth="sm">
 
                 <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '20px', marginTop: '50px'}}>
-                    <img src={setlistData?.picture} alt="Setlist Image" style={{ width: '100px', height: '100px' }} />
+                    <img src={setlistData?.picture} alt="Setlist Image" style={{ width: '100px', height: '100px', border:'2px solid #c4317a' }} />
                 </div>
 
                 <div style={{ marginBottom: '20px', textAlign: 'center' }}>

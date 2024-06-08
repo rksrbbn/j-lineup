@@ -62,9 +62,9 @@ function Result() {
                 </div>
 
                 <div style={{ marginBottom: '20px', textAlign: 'center' }}>
-                    <Typography variant="h6" style={{ color: '#c4317a', borderRadius: '2px', padding: '2px', width: '50%', margin: 'auto' }}>
+                    <p style={{ color: '#c4317a', borderRadius: '2px', padding: '2px', width: '50%', margin: 'auto', fontSize: { xs: '16px', sm: '18px', md: '20px', lg: '24px', xl: '26px' }  }}>
                         {lineup?.[0]?.unitSongName}
-                    </Typography>
+                    </p>
                     {lineup?.[0]?.creatorName != '' && (
                         <p style={{ color: '#c4317a', fontSize: '12px' }}>Lineup by {lineup?.[0]?.creatorName}</p>
                     )}

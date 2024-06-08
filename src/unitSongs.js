@@ -133,6 +133,48 @@ export const unitSongs = [
         vocal_level: 1,
         total_member: 7,
     },
+
+    // CARA MEMINUM RAMUNE
+    {
+        name: 'Cross',
+        setlist: 'Cara Meminum Ramune',
+        theme: 'cool',
+        dance_level: 1,
+        vocal_level: 1,
+        total_member: 3,
+    },
+    {
+        name: 'Finland Miracle',
+        setlist: 'Cara Meminum Ramune',
+        theme: 'cool',
+        dance_level: 1,
+        vocal_level: 1,
+        total_member: 3,
+    },
+    {
+        name: 'Menatapmu Sayonara',
+        setlist: 'Cara Meminum Ramune',
+        theme: 'cool',
+        dance_level: 1,
+        vocal_level: 1,
+        total_member: 2,
+    },
+    {
+        name: 'Burung Unta si Pembohong',
+        setlist: 'Cara Meminum Ramune',
+        theme: 'cool',
+        dance_level: 1,
+        vocal_level: 1,
+        total_member: 3,
+    },
+    {
+        name: 'Nice to Meet You!',
+        setlist: 'Cara Meminum Ramune',
+        theme: 'cool',
+        dance_level: 1,
+        vocal_level: 1,
+        total_member: 5,
+    },
 ];
 
 export const setlist = [
@@ -148,5 +190,9 @@ export const setlist = [
         name: 'Ingin Bertemu',
         picture: 'assets/setlist/ingin_bertemu.png'
     },
+    {
+        name: 'Cara Meminum Ramune',
+        picture: 'assets/setlist/cara_meminum_ramune.png'
+    }
 ];
 

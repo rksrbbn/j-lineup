@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { getLineup, clearLineup } from '../db';
-import { Container, Button, Avatar, Typography, Grid, Badge } from '@mui/material';
+import { Container, Button, Avatar, Typography, Grid, Badge, Divider } from '@mui/material';
 import HeaderApp from '../components/HeaderApp';
 import FooterApp from '../components/FooterApp';
 import { useNavigate } from 'react-router-dom';
@@ -65,9 +65,13 @@ function Result() {
                     <p style={{ color: '#c4317a', borderRadius: '2px', padding: '2px', width: '50%', margin: 'auto', fontSize: { xs: '16px', sm: '18px', md: '20px', lg: '24px', xl: '26px' }  }}>
                         {lineup?.[0]?.unitSongName}
                     </p>
-                    {lineup?.[0]?.creatorName != '' && (
+                    {/* {lineup?.[0]?.creatorName != '' && (
                         <p style={{ color: '#c4317a', fontSize: '12px' }}>Lineup by {lineup?.[0]?.creatorName}</p>
-                    )}
+                    )} */}
+                </div>
+
+                <div style={{ marginBottom: '20px', textAlign: 'center' }}>
+                <Divider><Typography variant='h6' color='#c4317a'>LINEUP</Typography></Divider>
                 </div>
                 
                 <Grid container spacing={2} justifyContent="center" style={{ marginTop: '20px', fontSize: { xs: '10px', sm: '12px', md: '14px', lg: '16px' } }}>
@@ -100,6 +104,12 @@ function Result() {
                         </Grid>
                     ))}
                 </Grid>
+
+                <div style={{ marginTop: '50px', textAlign: 'center' }}>
+                    {lineup?.[0]?.creatorName != '' && (
+                        <p style={{ color: '#c4317a', fontSize: '12px' }}>Lineup by {lineup?.[0]?.creatorName}</p>
+                    )}
+                </div>
 
                 <div style={{ display: 'flex', justifyContent: 'center', marginTop: '50px' }}>
                     <Button fullWidth variant='outlined' color='error' onClick={backToHome}>CREATE NEW LINEUP</Button>

@@ -48,6 +48,12 @@ function Pages() {
     }
   };
 
+  const generateRandomMembers = () => {
+    const randomMembers = members.sort(() => Math.random() - 0.5).slice(0, unitSongMembers);
+    const memberNames = randomMembers.map(member => member.alias);
+    setSelectedMembers(memberNames);
+  };
+
   const createLineup = () => {
     // Jika jumlah selectedMembers kurang dari unitsong.total_member, tampilkan pesan error
     if (selectedMembers.length < unitSongMembers) {
@@ -126,65 +132,73 @@ function Pages() {
         )}
         
         {selectedSetlist && selectedSong && (
-          <>
-          <small data-testid="WarningIcon" style={{ color: 'red' }}>*Anda harus memilih {unitSongMembers} member untuk lagu ini.</small>
-         
-          <FormControl fullWidth variant='filled' style={{ marginBottom: '30px' }}>
-              <InputLabel id="member-multi-select-label" sx={{ fontSize: { xs: '10px', sm: '12px', md: '14px', lg: '16px' } }}>Members</InputLabel>
-              <Select
-                labelId="member-multi-select-label"
-                multiple
-                value={selectedMembers}
-                onChange={(event) => {
-                  // setSelectedCenter menjadi member pertama
-                  setSelectedCenter(selectedMembers[0]);
+          <div style={{ marginBottom: '30px' }}>
+            <small data-testid="WarningIcon" style={{ color: 'red' }}>*Anda harus memilih {unitSongMembers} member untuk lagu ini.</small>
+          
+            <FormControl fullWidth variant='filled'>
+                <InputLabel id="member-multi-select-label" sx={{ fontSize: { xs: '10px', sm: '12px', md: '14px', lg: '16px' } }}>Members</InputLabel>
+                <Select
+                  labelId="member-multi-select-label"
+                  multiple
+                  value={selectedMembers}
+                  onChange={(event) => {
+                    // setSelectedCenter menjadi member pertama
+                    setSelectedCenter(selectedMembers[0]);
 
-                  const {
-                    target: { value },
-                  } = event;
-                  // Batasi jumlah member yang dipilih sesuai dengan unitSongMembers
-                  const selected = typeof value === 'string' ? value.split(',') : value;
-                  if (selected.length <= unitSongMembers) {
-                    setSelectedMembers(selected);
-                  } else {
-                    // Jika melebihi, potong array untuk membatasi jumlahnya
-                    setSelectedMembers(selected.slice(0, unitSongMembers));
-                  }
-                } }
-                renderValue={(selected) => (
-                  <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap' }}>
-                    {selected.map((value) => (
-                      <div key={value} style={{ paddingRight: '5px', paddingLeft: '5px', backgroundColor: '#f50057', borderRadius: '15px', color: 'white', fontSize: { xs: '10px', sm: '12px', md: '14px', lg: '16px' } }}>
-                        {value}
-                      </div>
-                    ))}
-                  </div>
-                )}
-                MenuProps={{
-                  PaperProps: {
-                    style: {
-                      maxHeight: 48 * 4.5 + 8,
-                      width: 250,
-                    },
-                  },
-                }}
-              >
-                {members.sort((a, b) => a.alias.localeCompare(b.alias)).map((member) => (
-                  <MenuItem key={member.name} value={member.alias}>
-
-                    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', width: '100%' }}>
-                      <div style={{ display: 'flex', alignItems: 'center' }}>
-                        <Avatar src={member.picture} alt={member.alias} />
-                        <p style={{ marginLeft: '10px' }}>{member.alias}</p>
-                      </div>
-                      {member.trainee ? <img src="assets/icons/trainee_icon.png" alt="Trainee" style={{ width: '48px' }} /> : <img src="assets/icons/member_icon.png" alt="Member" style={{ width: '48px' }} />}
+                    const {
+                      target: { value },
+                    } = event;
+                    // Batasi jumlah member yang dipilih sesuai dengan unitSongMembers
+                    const selected = typeof value === 'string' ? value.split(',') : value;
+                    if (selected.length <= unitSongMembers) {
+                      setSelectedMembers(selected);
+                    } else {
+                      // Jika melebihi, potong array untuk membatasi jumlahnya
+                      setSelectedMembers(selected.slice(0, unitSongMembers));
+                    }
+                  } }
+                  renderValue={(selected) => (
+                    <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap' }}>
+                      {selected.map((value) => (
+                        <div key={value} style={{ paddingRight: '5px', paddingLeft: '5px', backgroundColor: '#f50057', borderRadius: '15px', color: 'white', fontSize: { xs: '10px', sm: '12px', md: '14px', lg: '16px' } }}>
+                          {value}
+                        </div>
+                      ))}
                     </div>
+                  )}
+                  MenuProps={{
+                    PaperProps: {
+                      style: {
+                        maxHeight: 48 * 4.5 + 8,
+                        width: 250,
+                      },
+                    },
+                  }}
+                >
+                  {members.sort((a, b) => a.alias.localeCompare(b.alias)).map((member) => (
+                    <MenuItem key={member.name} value={member.alias}>
 
-                  </MenuItem>
-                ))}
-              </Select>
+                      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', width: '100%' }}>
+                        <div style={{ display: 'flex', alignItems: 'center' }}>
+                          <Avatar src={member.picture} alt={member.alias} />
+                          <p style={{ marginLeft: '10px' }}>{member.alias}</p>
+                        </div>
+                        {member.trainee ? <img src="assets/icons/trainee_icon.png" alt="Trainee" style={{ width: '48px' }} /> : <img src="assets/icons/member_icon.png" alt="Member" style={{ width: '48px' }} />}
+                      </div>
 
-            </FormControl></>
+                    </MenuItem>
+                  ))}
+                </Select>
+
+              </FormControl>
+
+              {selectedMembers.length < 1 && (
+                <p style={{ color: 'red', fontSize: '12px', textDecoration: 'underline', cursor: 'pointer' }} onClick={generateRandomMembers}>
+                  Generate Random Members
+                </p>
+              )}
+
+          </div>
         )}
 
         {selectedSetlist && selectedSong && selectedMembers.length > 0 && (

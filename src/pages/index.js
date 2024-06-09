@@ -52,6 +52,7 @@ function Pages() {
     const randomMembers = members.sort(() => Math.random() - 0.5).slice(0, unitSongMembers);
     const memberNames = randomMembers.map(member => member.alias);
     setSelectedMembers(memberNames);
+    setSelectedCenter(memberNames[0]);
   };
 
   const createLineup = () => {

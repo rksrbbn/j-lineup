@@ -97,7 +97,7 @@ function Show() {
                 <Typography variant="h4" component="h1" gutterBottom style={{ marginTop: '20px', textAlign: 'center', fontFamily: 'Poppins' }}>
                     Custom Show Lineup Creator
                 </Typography>
-                
+                <small>({songs.length} songs available)</small>
                 {error && (
                     <Alert severity="error" variant='filled' style={{ 
                         position: 'fixed', top: '10px', left: '50%', transform: 'translateX(-50%)', zIndex: 1000 ,

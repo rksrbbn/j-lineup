@@ -216,5 +216,38 @@ export const songs = [
     {
         name: 'Rugi Sudah dicium (Kiss Shite Son Shichatta)',
     },
+    {
+        name: 'Bunga Sakuraku (Boku no Sakura)',
+    },
+    {
+        name: 'Pelaut yang Melihat Mimpi di Tengah Badai (Suifu wa Arashi ni Yume wo Miru)',
+    },
+    {
+        name: 'Baju Putih (Shiroi Shirts)',
+    },
+
+    // UNFINISHED
+
+    // END THEATER SONGS SETLIST
+
+    {
+        name: 'JKT48',
+    },
+    {
+        name: 'Apakah Kau Melihat Mentari Senja? (Yuuhi wo Miteiru ka?)',
+    },
+    {
+        name: 'Flying Get!',
+    },
+    {
+        name: 'Papan Penanda Isi Hati (Kokoro no Placard)',
+    },
+    {
+        name: 'Musim Panas Sounds Good! (Manatsu no Sounds Good!)',
+    },
+    {
+        name: 'Everyday, Kachuusha',
+    },
+
 ]
 

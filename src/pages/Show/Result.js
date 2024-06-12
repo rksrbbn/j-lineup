@@ -29,7 +29,7 @@ function ResultShow() {
                     return memberData ? memberData : { alias: alias, name: "Unknown", role: "Unknown" };
                 });
                 setMemberList(memberObjects);
-                const songsData = await getShowSongs(firstShow.id);
+                const songsData = await getShowSongs(); // Pastikan id adalah string
                 setSongs(songsData);
             }
             else {
@@ -90,6 +90,7 @@ function ResultShow() {
                 {/* SETLIST OF SELECTED SONGS */}
                 {songs.map((song, index) => (
                     <Box
+                    key={index}
                         sx={{
                             color: '#c4317a',
                             fontSize: {

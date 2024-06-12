@@ -40,8 +40,8 @@ export const addShowSongs = async (showId, songs) => {
   return await db.showSongs.bulkAdd(showSongs);
 };
 
-export const getShowSongs = async (showId) => {
-  return await db.showSongs.where({ showId: showId }).toArray();
+export const getShowSongs = async () => {
+  return await db.showSongs.toArray();
 };
 
 export const clearShowSongs = async () => {

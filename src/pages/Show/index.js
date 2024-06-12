@@ -101,7 +101,7 @@ function Show() {
                 {error && (
                     <Alert severity="error" variant='filled' style={{ 
                         position: 'fixed', top: '10px', left: '50%', transform: 'translateX(-50%)', zIndex: 1000 ,
-                        fontSize: { xs: '8px', sm: '10px', md: '12px', lg: '14px' }, width: '90%'
+                        fontSize: { xs: '8px', sm: '10px', md: '12px', lg: '14px' }
                         }}>
                         {errorMessage}
                     </Alert>

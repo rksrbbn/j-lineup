@@ -178,5 +178,43 @@ export const songs = [
     },
     // END THIS IS JKT48 NEW ERA MINI ALBUM
 
+    {
+        name: 'JKT Festival',
+    },
+    {
+        name: 'Gadis Yang Paling Cantik di Pinggiran Pantai (Nagiichi)',
+    },
+    {
+        name: 'Gadis Rambut Hitam yang Punah (Zetsumetsu Kurokami Shoujo)',
+    },
+    {
+        name: 'Melon Juice',
+    },
+    {
+        name: 'Pintu Masa Depan (Mirai no Tobira)',
+    },
+    {
+        name: 'Gingham Check',
+    },
+
+    // START THEATER SONGS SETLIST (Unit song skipped)
+    {
+        name: 'Jurus Rahasia Teleport (Hissatsu Teleport)',
+    },
+    {
+        name: 'Putri Duyung yang Sedang Sedih (Gokigen Naname na Mermaid )',
+    },
+    {
+        name: 'Bersepeda Berdua (Futari Nori no Jitensha)',
+    },
+    {
+        name: 'Two Years Later',
+    },
+    {
+        name: 'Cara Menggunakan Hidup (Inochi no Tsukai Michi)',
+    },
+    {
+        name: 'Rugi Sudah dicium (Kiss Shite Son Shichatta)',
+    },
 ]
 

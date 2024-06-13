@@ -197,7 +197,7 @@ export const songs = [
         name: 'Gingham Check',
     },
 
-    // START THEATER SONGS SETLIST (Unit song skipped)
+    // START THEATER SONGS SETLIST (Some Unit song skipped)
     // PAJAMA DRIVE
     {
         name: 'Jurus Rahasia Teleport (Hissatsu Teleport)',
@@ -392,6 +392,68 @@ export const songs = [
     // SBGN
     {
         name: 'Bel Terakhir Berbunyi (Saishuu Bell ga Naru)',
+    },
+    {
+        name: 'Cara Mendapatkan Pacar (Boyfriend no Tsukurikata)',
+    },
+    {
+        name: 'Tak Ingin Jadi Orang Hebat (Erai Hito ni Naritakunai)',
+    },
+    {
+        name: 'Stand Up!',
+    },
+    {
+        name: 'Coolgirl',
+    },
+    {
+        name: 'Kapasitas Ikan Migrasi (Kaiyuugyou no Capacity)',
+    },
+    {
+        name: 'Pergi untuk Bertemu (Ai ni Ikou)',
+    },
+    {
+        name: 'Kucing Siam (Shamu Neko)',
+    },
+    {
+        name: 'Jalan Melos (Melos no Michi)',
+    },
+    {
+        name: 'Dukungan (Sasae)',
+    },
+
+    // SAKA AGARI
+    {
+        name: 'Telapak Tangan (Tenohira)',
+    },
+    {
+        name: 'Penyangkalan Diri Requiem (Hitei no Requiem)',
+    },
+    {
+        name: 'Keringat itu Tidak Berbohong (Sono Ase wa Uso wo Tsukanai)',
+    },
+    {
+        name: 'Jika Aku Dipelukmu (Dakishimeraretara)',
+    },
+    {
+        name: 'Pura-pura dan Kepalsuan (Furishite Maneshite)',
+    },
+    {
+        name: 'Seberangi Lautan (Umi wo Watare!)',
+    },
+    {
+        name: 'Party di Sudut Jalan (Machikado no Party)',
+    },
+    {
+        name: 'Fan Letter',
+    },
+    {
+        name: 'Terhina (Fugiri)',
+    },
+    {
+        name: 'Ganteng Tapi Nanggung (Hanpa na Ikemen)',
+    },
+    {
+        name: 'To be continued',
     },
     
     

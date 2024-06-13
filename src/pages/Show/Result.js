@@ -45,7 +45,7 @@ function ResultShow() {
             <HeaderApp/>
             <Container className="App" maxWidth="md">
                 <div style={{ marginBottom: '50px', textAlign: 'center' }}>
-                    <Typography variant="h4" style={{ marginTop: '50px', color: '#c4317a'}}>{show.name}</Typography>
+                    <Typography variant="h4" style={{ marginTop: '50px', color: '#c4317a', background: 'linear-gradient(to right, red, purple)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent'}}>{show.name}</Typography>
                     <small style={{ color: '#c4317a' }}>
                         {show.date && show.location ? `${show.date} | ${show.location}` : show.date ? show.date : show.location}
                     </small>

@@ -279,6 +279,84 @@ export const songs = [
         name: 'Matahari Milikku (Boku no Taiyou)',
     },
 
+    // DAREKA NO TAMENI
+    {
+        name: 'Evening Primrose (Tsukimisou)',
+    },
+    {
+        name: 'Warning!',
+    },
+    {
+        name: 'Malam Ulang Tahun (Tanjoubi no Yoru)',
+    },
+    {
+        name: 'Summer Has Gone (Natsu ga Ichatta)',
+    },
+    {
+        name: 'Adyth (Koike)',
+    },
+    {
+        name: 'Bentuk Sang Rembulan (Tsuki no Katachi)',
+    },
+    {
+        name: 'Demi Seseorang (Dareka no Tame ni)',
+    },
+    {
+        name: 'Gadis Penjual Air Mata (Namida uri no Shoujo)',
+    },
+
+    // SG
+    {
+        name: 'Beach Sandal',
+    },
+    {
+        name: 'Sampai dirimu menjadi bintang (Kimi ga Hoshi ni Naru Made)',
+    },
+    {
+        name: 'Don\'t Disturb!',
+    },
+    {
+        name: 'Garis Pergantian Hari Cinta (Hizuke Henkousen)',
+    },
+    {
+        name: 'Kembang Api Milikku (Boku no Uchiage Hanabi)',
+    },
+    {
+        name: 'Janji Ya (Yakusoku yo)',
+    },
+    {
+        name: 'Jadilah Batu yang Berputar (Korogaru Ishi ni nare)',
+    },
+
+    // TWT
+    {
+        name: 'Angin Kita (Bokura no Kaze)',
+    },
+    {
+        name: 'Mango No. 2',
+    },
+    {
+        name: 'Sambil Menggandeng Erat Tanganku (Te wo Tsunaginagara)',
+    },
+    {
+        name: 'Innocence',
+    },
+    {
+        name: 'Romance Rocket',
+    },
+    {
+        name: 'Arah Sang Cinta dan Balasannya (Koi no Keikou to Taisaku)',
+    },
+    {
+        name: 'Aku Sangat Suka (Daisuki)',
+    },
+    {
+        name: 'Tali Persahabatan (Rope no Yuujou)',
+    },
+    {
+        name: 'Malam Hari Selasa, Pagi Hari Rabu (Kayoubi no Yoru, Suiyoubi no Asa)',
+    },
+
 
     // UNFINISHED
 

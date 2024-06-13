@@ -357,10 +357,50 @@ export const songs = [
         name: 'Malam Hari Selasa, Pagi Hari Rabu (Kayoubi no Yoru, Suiyoubi no Asa)',
     },
 
+    // DEWI THEATER
+    {
+        name: 'Palu Keberanian (Yuuki no Hammer)',
+    },
+    {
+        name: 'Persentase Meteor (Inseki no Kakuritsu)',
+    },
+    {
+        name: 'Stripper Cinta (Ai no Stripper)',
+    },
+    {
+        name: 'Dewi Theater (Theater no Megami)',
+    },
+    {
+        name: '100 Meter ke Minimarket (100 Meter Conbini)',
+    },
+    {
+        name: 'Suka Suka Suka (Suki Suki Suki)',
+    },
+    {
+        name: 'Membeku Karena Selamat Tinggal (Sayonara no Kanashibari)',
+    },
+    {
+        name: 'Surat Undangan Sang Angin Laut (Shiokaze no Shoutaijou)',
+    },
+    {
+        name: 'Honest Man',
+    },
+    {
+        name: 'Pesawat Terbang Kertas Milik Kita (Bokutachi no Kamihikouki)',
+    },
 
+    // SBGN
+    {
+        name: 'Bel Terakhir Berbunyi (Saishuu Bell ga Naru)',
+    },
+    
+    
     // UNFINISHED
-
+    
     // END THEATER SONGS SETLIST
+    {
+        name: 'Suka! Suka! Skip! (Suki! Suki! Skip!)',
+    },
 
     {
         name: 'JKT48',

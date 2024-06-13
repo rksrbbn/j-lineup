@@ -198,6 +198,7 @@ export const songs = [
     },
 
     // START THEATER SONGS SETLIST (Unit song skipped)
+    // PAJAMA DRIVE
     {
         name: 'Jurus Rahasia Teleport (Hissatsu Teleport)',
     },
@@ -226,6 +227,59 @@ export const songs = [
         name: 'Baju Putih (Shiroi Shirts)',
     },
 
+    // RKJ
+    {
+        name: 'Cahaya Panjang (Nagai Hikari)',
+    },
+    {
+        name: 'Di Tengah Hujan Badai Tiba-tiba (Squall no Aida Ni)',
+    },
+    {
+        name: 'Gadis SMA Putri Tidur (JK Nemurihime)',
+    },
+    {
+        name: 'Jatuh Cinta Setiap Bertemu Denganmu (Kimi ni Au Tabi Koi wo Suru)',
+    },
+    {
+        name: 'Switch',
+    },
+    {
+        name: 'Sneakers Waktu Itu (Ano Koro no Sneakers)',
+    },
+    
+    // BNT
+    {
+        name: 'Dreamin\' Girls',
+    },
+    {
+        name: 'RUN RUN RUN',
+    },
+    {
+        name: 'Buah Masa Depan (Mirai no Kajitsu)',
+    },
+    {
+        name: 'Viva! Hurricane',
+    },
+    {
+        name: 'Kakak Kelasku (Takeuchi Senpai)',
+    },
+    {
+        name: 'Dengan Berbagai Alasan (Sonna Konna Wake De)',
+    },
+    {
+        name: 'Déja vu',
+    },
+    {
+        name: 'Lay Down',
+    },
+    {
+        name: 'BINGO!',
+    },
+    {
+        name: 'Matahari Milikku (Boku no Taiyou)',
+    },
+
+
     // UNFINISHED
 
     // END THEATER SONGS SETLIST
@@ -247,6 +301,66 @@ export const songs = [
     },
     {
         name: 'Everyday, Kachuusha',
+    },
+    {
+        name: 'Flying High',
+    },
+    {
+        name: 'UZA',
+    },
+    {
+        name: 'High Tension',
+    },
+    {
+        name: 'Rapsodi',
+    },
+    {
+        name: 'Cara Ceroboh untuk Mencinta (Darashinai Aishikata)',
+    },
+    {
+        name: 'Sayonara Crawl',
+    },
+    {
+        name: 'Magic Hour',
+    },
+    {
+        name: 'Angin Sedang Berhembus (Kaze wa Fuiteiru)',
+    },
+    {
+        name: 'Pareo adalah Emerald (Pareo wa Emerald)',
+    },
+    {
+        name: 'Halloween Night',
+    },
+    {
+        name: 'Beginner',
+    },
+    {
+        name: 'LOVE TRIP',
+    },
+    {
+        name: 'So Long!',
+    },
+    {
+        name: 'Indahnya Senyum Manismu dst. (Suzukake Nanchara)',
+    },
+    {
+        name: 'Dirimu Melody (Kimi wa Melody)',
+    },
+    {
+        name: 'Gadis Gadis Remaja (Seishun Girls)',
+    },
+    {
+        name: 'Sekarang Para Para (Ima Para)',
+    },
+    {
+        name: 'Wahai Kesatria (Tsuyokimono yo)',
+    },
+    {
+        name: 'Seesaw Game Penuh Air Mata (Namida no SeeSaw Game)',
+    },
+    {
+        name: 'Langit Biru Cinta Searah (Aozora Kataomoi)',
     },
 
 ]

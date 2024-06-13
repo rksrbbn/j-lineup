@@ -406,9 +406,6 @@ export const songs = [
         name: 'Coolgirl',
     },
     {
-        name: 'Kapasitas Ikan Migrasi (Kaiyuugyou no Capacity)',
-    },
-    {
         name: 'Pergi untuk Bertemu (Ai ni Ikou)',
     },
     {
@@ -541,6 +538,96 @@ export const songs = [
     },
     {
         name: 'Langit Biru Cinta Searah (Aozora Kataomoi)',
+    },
+
+    // GINGHAM CHECK ALBUM
+    {
+        name: 'Kilat yang Indah (Utsukushii Inazuma)',
+    },
+    {
+        name: 'Kali Ini Ecstasy (Kondo Koso Ecstasy)',
+    },
+    {
+        name: 'Aku akan Berjuang (Boku wa Ganbaru)',
+    },
+    {
+        name: 'Kelopak-Kelopak Bunga Sakura (Sakura no Hanabiratachi)',
+    },
+    // END
+    {
+        name: 'Lucky Seven',
+    },
+    {
+        name: 'Ciuman juga Kidal (Kiss Datte Hidarikiki)',
+    },
+    {
+        name: 'Simpati Gravitasi (Juuryoku Sympathy)',
+    },
+    {
+        name: 'Selamanya Pressure (Eien Pressure)',
+    },
+    {
+        name: 'Berkedip 3 Kali (Wink wa Sankai)',
+    },
+    {
+        name: 'Escape',
+    },
+    {
+        name: 'Dibanding Kemarin Semakin Suka (Kinou Yori Motto Suki)',
+    },
+    {
+        name: 'Buah Mawar (Bara no Kajitsu)',
+    },
+    {
+        name: 'Apel yang Ada di Puncak (Takane no Ringo)',
+    },
+    {
+        name: 'Value Milikku Saja (Boku Dake no value)',
+    },
+    {
+        name: 'Ratu Para Idola (Idol no Oujya)',
+    },
+    {
+        name: 'Larilah! Penguin (Hashire! Penguin)',
+    },
+    {
+        name: 'Ha!',
+    },
+    {
+        name: 'Sakura Kita Makan Bersama (Sakura, Minna de Tabeta)',
+    },
+    {
+        name: 'Ingatan Kosmos (Cosmos no Kioku)',
+    },
+    {
+        name: 'Birth',
+    },
+    {
+        name: 'Musim yang Selanjutnya (Tsugi no Season)',
+    },
+    {
+        name: 'After Rain',
+    },
+    {
+        name: 'Sweet and Bitter',
+    },
+    {
+        name: 'How Come?',
+    },
+    {
+        name: 'Pioneer',
+    },
+    {
+        name: 'Punkish',
+    },
+    {
+        name: 'Malu-Malu Lollipop (Hanikami Lollipop)',
+    },
+    {
+        name: 'Summer Love Sounds Good!',
+    },
+    {
+        name: 'Jangan Melihat ke Belakang! (Don\'t Look Back)',
     },
 
 ]

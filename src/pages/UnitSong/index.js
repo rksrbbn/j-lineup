@@ -77,7 +77,7 @@ function UnitSong() {
       <HeaderApp />
       <Container className="App" maxWidth="sm">
 
-        <Typography variant="h4" component="h1" gutterBottom style={{ marginTop: '20px', textAlign: 'center', fontFamily: 'Poppins' }}>
+        <Typography variant="h4" component="h1" gutterBottom style={{ marginTop: '20px', textAlign: 'center', fontFamily: 'Poppins', background: 'linear-gradient(to right, red, purple)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
           Unit Song Lineup Creator
         </Typography>
 

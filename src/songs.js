@@ -452,6 +452,109 @@ export const songs = [
     {
         name: 'To be continued',
     },
+
+    // IDOL NO YOAKE
+    {
+        name: 'Bersama-sama Semuanya (Minasan mo go Issho ni )'
+    },
+    {
+        name: 'Angin Musim Semi Pertama (Haru Ichiban ga Fuku Koro)'
+    },
+    {
+        name: 'Kebenaran Tinju Ini (Kobushi no Seigi)'
+    },
+    {
+        name: 'Tak Bisa Berhenti jadi Gadis SMA (Joshikousei wa Yamerarenai)'
+    },
+    {
+        name: 'Andai Ku Dapat Ungkapkan Cinta (Suki to Ieba Yokatta)'
+    },
+    {
+        name: 'Freckles\' Kiss (Sobakasu no Kiss)'
+    },
+    {
+        name: 'Keteguhan Hati Dandelion (Tanpopo no Kesshin)'
+    },
+    {
+        name: 'J Stars'
+    },
+    {
+        name: 'Jalan Berkelok Yokosuka (Yokosuka Curve)'
+    },
+    {
+        name: 'Terima Kasih (Arigatou)'
+    },
+
+    // SNM (TUNAS DIBALIK SERAGAM)
+    {
+        name: 'Ku Tak Pantas Jadi Seorang Pujangga Cinta (Koi wo Kataru Shijin ni Narenakute...)'
+    },
+    {
+        name: 'Ciuman Kelulusan (Goukaku Kiss)'
+    },
+    {
+        name: 'Antena (Antenna)'
+    },
+    {
+        name: 'Alibi Kecemburuan (Jealousy no Alibi)'
+    },
+    {
+        name: 'Doubt!'
+    },
+    {
+        name: 'Lagu Sahabat (Nakama no Uta)'
+    },
+    {
+        name: 'Kolam yang Tak Ada Airnya (Mizu no Nai Pool)'
+    },
+    {
+        name: 'Tangga Menuju Surga (Rakuen no Kaidan)'
+    },
+    {
+        name: 'Pasukan Pinokio (Pinocchio Gun)'
+    },
+    {
+        name: 'Tentang Suratku (Tegami no Koto)'
+    },
+
+    // CMR (RAMUNE NO NOMIKATA)
+    {
+        name : 'Pertanda (Kizashi)'
+    },
+    {
+        name : 'Schoolyards Puppy (Koutei no Koinu)'
+    },
+    {
+        name : 'Disco di UKS (Disco Hokenshitsu)'
+    },
+    {
+        name : 'Setlist yang Dinanti (Omatase Set list)'
+    },
+    {
+        name : 'Nice to Meet You!'
+    },
+    {
+        name : 'Balerina Dalam Sepi (Kodoku na Ballerina)'
+    },
+    {
+        name : 'Sekarang Ku Bersama Denganmu (Ima Kimi to Irareru Koto)'
+    },
+    {
+        name : 'Winning Ball'
+    },
+    {
+        name : 'Cinta Dalam Handshake (Akushu no Ai)'
+    },
+    {
+        name : 'Harapan Bowling (Bowling Ganbou)'
+    },
+    {
+        name : '16 Warna Krayon Mimpi (16iro no Yume Crayon)'
+    },
+    {
+        name : 'Cara Meminum Ramune (Ramune no Nomikata)'
+    },
+
     
     
     // UNFINISHED

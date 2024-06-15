@@ -28,6 +28,11 @@ function Pages()
                     <div style={{ marginBottom: '30px', cursor: 'pointer', backgroundColor: '#f50057', color: 'white', padding: '10px', borderRadius: '14px' }} onClick={() => navigate('/show')}>
                         Create Custom Show Lineup (BETA)
                     </div>
+                    <a href="https://j-roulette.vercel.app/" target="_blank" style={{ color: 'white', textDecoration: 'none' }}>
+                        <div style={{ marginBottom: '30px', cursor: 'pointer', backgroundColor: '#f50057', color: 'white', padding: '10px', borderRadius: '14px' }}>
+                            J-Roulette
+                        </div>
+                    </a>
                 </div>
             </Container>
             <FooterApp />

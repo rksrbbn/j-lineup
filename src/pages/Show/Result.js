@@ -51,7 +51,7 @@ function ResultShow() {
                     </small>
                 </div>
 
-                <div style={{ marginBottom: '20px', textAlign: 'center' }}>
+                <div style={{ marginBottom: '50px', textAlign: 'center' }}>
                     <Divider><Typography variant='h6' color='#c4317a'>LINEUP</Typography></Divider>
                 </div>  
 

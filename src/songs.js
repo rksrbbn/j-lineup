@@ -555,7 +555,57 @@ export const songs = [
         name : 'Cara Meminum Ramune (Ramune no Nomikata)'
     },
 
-    
+    // AITAKATTA with US
+    {
+        name: 'Boneka yang Sedih (Nageki no Figure)'
+    },
+    {
+        name: 'Air Mata Shounan (Namida no Shounan)'
+    },
+    {
+        name: 'Cherry Tepi Pantai (Nagisa no Cherry)'
+    },
+    {
+        name: 'Kaca Berbentuk I LOVE YOU (Glass no I LOVE YOU )'
+    },
+    {
+        name: 'Rencana Cinta (Koi no PLAN)'
+    },
+    {
+        name: 'Peluklah Aku dari Belakang (Senaka Kara Dakishimete)'
+    },
+    {
+        name: 'Revolusi Rio (Rio no Kakumei)'
+    },
+    {
+        name: 'Tetapi... (Dakedo...)'
+    },
+    {
+        name: 'Dear My Teacher'
+    },
+    {
+        name: 'Rok Bergoyang (Skirt, Hirari)'
+    },
+
+    // BUNGA MATAHARI
+    {
+        name: 'Party akan Dimulai (Party ga Hajimaru yo)'
+    },
+    {
+        name: 'Virus Tipe Hati (Heart Gata Virus)'
+    },
+    {
+        name: 'Pertahanan dari Cinta (Itoshisa no defense)'
+    },
+    {
+        name: 'Prinsip Kesucian Hati (Junjou Shugi)'
+    },
+    {
+        name: 'Dua Orang yang Terlarang (Kinjirareta Futari)'
+    },
+    {
+        name: 'Rider'
+    },
     
     // UNFINISHED
     

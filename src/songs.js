@@ -802,6 +802,21 @@ export const songs = [
     },
 
     // BANZAI
+    {
+        name: 'Petak Umpet Romansa (Romance Kakurenbo)'
+    },
+    {
+        name: 'Apa yang Sang Gadis Perbuat di Musim Panas? (Shoujo wa Manatsu ni Nani wo Suru?)'
+    },
+    {
+        name: 'Banzai Venus'
+    },
+    {
+        name: 'Must be Now'
+    },
+    {
+        name: 'Cinta Tak Berbalas Finally (Kataomoi Finally)'
+    },
     
     // UNFINISHED
     
@@ -978,6 +993,21 @@ export const songs = [
     {
         name: 'Jangan Melihat ke Belakang! (Don\'t Look Back)',
     },
+    
+    // 5th SSK
+    {
+        name: 'Pundak Kanan (Migikata)',
+    },
+    {
+        name: 'Bukan Alpukat (Avocado Janeshi)',
+    },
+    {
+        name: 'Relax!',
+    },
+    {
+        name: 'Bukan Salah Air Mata (Namida no Sei Janai)',
+    },
+
 
 ]
 

@@ -48,6 +48,8 @@ function Pages()
                             left: '50%',
                             transform: 'translate(-50%, -50%)',
                             width: {xs: '250px', md:'300px', lg:'400px'}, // Default width for smaller screens
+                            height:'250px',
+                            overflowY:'scroll',
                             bgcolor: 'background.paper',
                             color: '#c4317a',
                             boxShadow: 24,
@@ -60,6 +62,11 @@ function Pages()
                                 [Updates]
                             </Typography>
                             <ul>
+                                <li>
+                                <small id="modal-modal-description" sx={{ mt: 2 }}>
+                                    [17/06/2024 11:47PM] New Songs added (From B.E.L.I.E.V.E Team J & K3) 
+                                </small>
+                                </li>
                                 <li>
                                 <small id="modal-modal-description" sx={{ mt: 2 }}>
                                     [17/06/2024 3:40PM] Fixed member's alias (Lulu), thanks to @doodlyz1 for the report.

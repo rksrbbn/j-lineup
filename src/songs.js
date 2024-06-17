@@ -1008,6 +1008,36 @@ export const songs = [
         name: 'Bukan Salah Air Mata (Namida no Sei Janai)',
     },
 
+    // BELIEVE TEAM J
+    {
+        name: 'Teman Sekelas (Classmate)',
+    },
+    {
+        name: 'Hubungan Kau dan Aku (Kimi to Boku no Kankei)',
+    },
+    {
+        name: 'Lagu 22 Bersaudari (22nin Shimai no Uta)',
+    },
+    
+    // BELIEVE TEAM K3
+    {
+        name: 'Ayo Penuh Skandal (Scandalous ni Ikou)',
+    },
+    {
+        name: 'Beloklah ke Kanan! (Migi e Magare!)',
+    },
+    {
+        name: 'Scrap & Build',
+    },
+    {
+        name: 'Beloklah ke Kanan! (Migi e Magare!)',
+    },
+    {
+        name: 'Kesepakatan Genjatan Senjata (Kyusen Kyotei)',
+    },
+    {
+        name: 'Team KIII Oshi',
+    },
 
 ]
 

@@ -209,6 +209,18 @@ export const songs = [
         name: 'Bersepeda Berdua (Futari Nori no Jitensha)',
     },
     {
+        name: 'Ekor Malaikat (Tenshi no Shippo)',
+    },
+    {
+        name: 'Pajama Drive',
+    },
+    {
+        name: 'Air Mata Perasaan yang Tak Tersampaikan (Temodemo no Namida)',
+    },
+    {
+        name: 'Joan of Arc di Dalam Cermin (Kagami no Naka no Jeanne D\'Arc)',
+    },
+    {
         name: 'Two Years Later',
     },
     {
@@ -241,10 +253,28 @@ export const songs = [
         name: 'Jatuh Cinta Setiap Bertemu Denganmu (Kimi ni Au Tabi Koi wo Suru)',
     },
     {
+        name: 'Malaikat Hitam (Kuroi Tenshi)',
+    },
+    {
+        name: 'Aturan Anti Cinta (Renai Kinshi Jourei)',
+    },
+    {
+        name: 'Tsundere!',
+    },
+    {
+        name: 'Mawar Natal Musim Panas (Manatsu no Christmas Rose)',
+    },
+    {
         name: 'Switch',
     },
     {
         name: 'Sneakers Waktu Itu (Ano Koro no Sneakers)',
+    },
+    {
+        name: 'JKT Datang! (JKT Sanjou!)',
+    },
+    {
+        name: 'Napas dalam Air Mata (Namida no Shinkokyuu)',
     },
     
     // BNT
@@ -261,13 +291,25 @@ export const songs = [
         name: 'Viva! Hurricane',
     },
     {
+        name: 'Jangan Panggil Diriku Idol (Idol Nante Yobanaide)',
+    },
+    {
+        name: 'Aku, Juliette dan Jet Coaste (Boku to Juliette to Jet Coaster)',
+    },
+    {
+        name: 'Cinta Higurashi (Higurashi no Koi)',
+    },
+    {
+        name: 'Bunga Matahari (Himawari)',
+    },
+    {
         name: 'Kakak Kelasku (Takeuchi Senpai)',
     },
     {
         name: 'Dengan Berbagai Alasan (Sonna Konna Wake De)',
     },
     {
-        name: 'Déja vu',
+        name: 'Déja vu (Deja Vu)',
     },
     {
         name: 'Lay Down',
@@ -288,6 +330,18 @@ export const songs = [
     },
     {
         name: 'Malam Ulang Tahun (Tanjoubi no Yoru)',
+    },
+    {
+        name: 'Bird',
+    },
+    {
+        name: 'Jatuhkan dengan Kiss-Bye! (Nage kisu de Uchiotose)',
+    },
+    {
+        name: 'Khayalan (Shinkirou)',
+    },
+    {
+        name: 'Seragam Ini Sangat Mengganggu (Seifuku ga Jama wo suru)',
     },
     {
         name: 'Summer Has Gone (Natsu ga Ichatta)',
@@ -313,6 +367,9 @@ export const songs = [
         name: 'Sampai dirimu menjadi bintang (Kimi ga Hoshi ni Naru Made)',
     },
     {
+        name: 'Blue Rose',
+    },
+    {
         name: 'Don\'t Disturb!',
     },
     {
@@ -327,6 +384,9 @@ export const songs = [
     {
         name: 'Jadilah Batu yang Berputar (Korogaru Ishi ni nare)',
     },
+    {
+        name: 'Cinderella tak akan tertipu (Cinderella wa Damasarenai)',
+    },
 
     // TWT
     {
@@ -337,6 +397,21 @@ export const songs = [
     },
     {
         name: 'Sambil Menggandeng Erat Tanganku (Te wo Tsunaginagara)',
+    },
+    {
+        name: 'Glory Days',
+    },
+    {
+        name: 'Barcode Hati Ini (Kono Mune no Barcode)',
+    },
+    {
+        name: 'Ajak Aku Pergi Menuju ke Wimbledon (Wimbledon e Tsuretette)',
+    },
+    {
+        name: 'Sang Pianis Hujan (Ame no Pianist)',
+    },
+    {
+        name: 'Keberadaan Coklat Itu (Choco no Yukue)',
     },
     {
         name: 'Innocence',
@@ -371,6 +446,21 @@ export const songs = [
         name: 'Dewi Theater (Theater no Megami)',
     },
     {
+        name: 'Cinta Pertamaku, Selamat Siang (Hatsukoi yo, Konnichiwa)',
+    },
+    {
+        name: 'Pada Malam yang Berbadai (Arashi no Yoru ni wa)',
+    },
+    {
+        name: 'Candy',
+    },
+    {
+        name: 'Locker Room Boy',
+    },
+    {
+        name: 'Perbuatan Angin Malam (Yokaze no Shiwaza)',
+    },
+    {
         name: '100 Meter ke Minimarket (100 Meter Conbini)',
     },
     {
@@ -386,6 +476,9 @@ export const songs = [
         name: 'Honest Man',
     },
     {
+        name: 'Team J Oshi / Team T Oshi',
+    },
+    {
         name: 'Pesawat Terbang Kertas Milik Kita (Bokutachi no Kamihikouki)',
     },
 
@@ -398,6 +491,18 @@ export const songs = [
     },
     {
         name: 'Tak Ingin Jadi Orang Hebat (Erai Hito ni Naritakunai)',
+    },
+    {
+        name: 'Return Match',
+    },
+    {
+        name: 'Pencuri Cinta Pertama (Hatsukoi Dorobou)',
+    },
+    {
+        name: 'Maafkan, Permataku (Gomen ne, Jewel)',
+    },
+    {
+        name: 'Lagu 18 Bersaudari (18 Nin Shimai no Uta)',
     },
     {
         name: 'Stand Up!',
@@ -429,7 +534,19 @@ export const songs = [
         name: 'Keringat itu Tidak Berbohong (Sono Ase wa Uso wo Tsukanai)',
     },
     {
+        name: 'End Roll',
+    },
+    {
+        name: 'Si Bintang Jatuh yang Egois (Wagamama na Nagareboshi)',
+    },
+    {
+        name: 'Warna Cinta (Ai no Iro)',
+    },
+    {
         name: 'Jika Aku Dipelukmu (Dakishimeraretara)',
+    },
+    {
+        name: 'Balada Serangga (Mushi no Ballad)',
     },
     {
         name: 'Pura-pura dan Kepalsuan (Furishite Maneshite)',
@@ -453,6 +570,41 @@ export const songs = [
         name: 'To be continued',
     },
 
+    // TADAIMA RENAICHUU
+    {
+        name: 'Boneka Teddy Bear (Kuma no Nuigurumi)',
+    },
+    {
+        name: 'Cinta Pertama di Jam 7 lewat 12 (7ji 12fun no Hatsukoi)',
+    },
+    {
+        name: 'Sampai Musim Semi Tiba (Haru ga Kuru Made)',
+    },
+    {
+        name: 'Cinta yang Tulus, Crescendo (Junai no Crescendo)',
+    },
+    {
+        name: 'Faint',
+    },
+    {
+        name: 'Pulang Kampung (Kikyou)',
+    },
+    {
+        name: 'Rasanya Malas (Darui Kanji)',
+    },
+    {
+        name: 'Mr. Kissman',
+    },
+    {
+        name: 'Kamulah yang Memberitahu Aku (Kimi ga Oshiete Kureta)',
+    },
+    {
+        name: 'Rasa Sayang yang Dulu Aku Remehkan (Keibetsu Shiteita Aijou)',
+    },
+    {
+        name: 'Betapa Indahnya Dunia Tempat Kita Lahir (Nante Suteki na Sekai ni Umareta no Darou)',
+    },
+
     // IDOL NO YOAKE
     {
         name: 'Bersama-sama Semuanya (Minasan mo go Issho ni )'
@@ -462,6 +614,21 @@ export const songs = [
     },
     {
         name: 'Kebenaran Tinju Ini (Kobushi no Seigi)'
+    },
+    {
+        name: 'Gadis yang Celaka (Zannen Shoujo)'
+    },
+    {
+        name: 'Berikan Coklat dengan Bibir (Kuchi Utsushi no Chocolate)'
+    },
+    {
+        name: 'Garis Diagonal Cinta Searah (Kataomoi no Taikakusen)'
+    },
+    {
+        name: 'Berandalan di Surga (Tengoku Yarou)'
+    },
+    {
+        name: 'Natasha yang Ku Cinta (Itoshiki Natasha)'
     },
     {
         name: 'Tak Bisa Berhenti jadi Gadis SMA (Joshikousei wa Yamerarenai)'
@@ -494,6 +661,21 @@ export const songs = [
     },
     {
         name: 'Antena (Antenna)'
+    },
+    {
+        name: 'Lebih dari Memori (Omoide Ijou)'
+    },
+    {
+        name: 'Serigala dan Pride (Ookami to Pride)'
+    },
+    {
+        name: 'Indra Keenam Seorang Gadis (Onna no Ko no Dairokkan)'
+    },
+    {
+        name: 'Stasiun Daun Kering (Kareha no Station)'
+    },
+    {
+        name: 'Kaleidoscope (Mangekyou)'
     },
     {
         name: 'Alibi Kecemburuan (Jealousy no Alibi)'
@@ -529,6 +711,18 @@ export const songs = [
     },
     {
         name : 'Setlist yang Dinanti (Omatase Set list)'
+    },
+    {
+        name : 'Cross'
+    },
+    {
+        name : 'Finland Miracle'
+    },
+    {
+        name : 'Menatapmu, Sayonara (Manazashi, Sayonara)'
+    },
+    {
+        name : 'Burung Unta si Pembohong (Usotsuki na Dachou)'
     },
     {
         name : 'Nice to Meet You!'
@@ -606,6 +800,8 @@ export const songs = [
     {
         name: 'Rider'
     },
+
+    // BANZAI
     
     // UNFINISHED
     

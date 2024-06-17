@@ -47,13 +47,14 @@ function Pages()
                             top: '50%',
                             left: '50%',
                             transform: 'translate(-50%, -50%)',
-                            width: 400,
+                            width: {xs: '250px', md:'300px', lg:'400px'}, // Default width for smaller screens
                             bgcolor: 'background.paper',
-                            // border: '2px solid #000',
-                            color:'#c4317a',
+                            color: '#c4317a',
                             boxShadow: 24,
-                            borderRadius:'10px',
-                            p: 4,
+                            borderRadius: '10px',
+                            border: 'none', // Remove border
+                            outline: 'none', // Remove outline
+                            p: 4
                         }}>
                             <Typography id="modal-modal-title" variant="h6" component="h2">
                                 [Updates]

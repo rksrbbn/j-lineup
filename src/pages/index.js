@@ -1,5 +1,5 @@
-import { useEffect } from 'react';
-import { Container, Typography } from '@mui/material';
+import { useState, useEffect } from 'react';
+import { Container, Typography, Modal, Box } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 import HeaderApp from '../components/HeaderApp';
 import FooterApp from '../components/FooterApp';
@@ -15,6 +15,11 @@ function Pages()
         clearShowSongs();
     }, []);
 
+
+    const [open, setOpen] = useState(false);
+    const handleOpen = () => setOpen(true);
+    const handleClose = () => setOpen(false);
+
     return (
         <div style={{ backgroundColor: '#FDECEF', minHeight: '100vh', marginTop: 0, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
             <HeaderApp />
@@ -28,6 +33,45 @@ function Pages()
                     <div style={{ marginBottom: '30px', cursor: 'pointer', backgroundColor: '#f50057', color: 'white', padding: '10px', borderRadius: '14px' }} onClick={() => navigate('/show')}>
                         Create Custom Show Lineup (BETA)
                     </div>
+                    <div style={{ marginBottom: '30px', cursor: 'pointer', backgroundColor: '#f50057', color: 'white', padding: '10px', borderRadius: '14px' }} onClick={handleOpen}>
+                        Information
+                    </div>
+                    <Modal
+                        open={open}
+                        onClose={handleClose}
+                        aria-labelledby="modal-modal-title"
+                        aria-describedby="modal-modal-description"
+                    >
+                        <Box sx={{
+                            position: 'absolute',
+                            top: '50%',
+                            left: '50%',
+                            transform: 'translate(-50%, -50%)',
+                            width: 400,
+                            bgcolor: 'background.paper',
+                            // border: '2px solid #000',
+                            color:'#c4317a',
+                            boxShadow: 24,
+                            borderRadius:'10px',
+                            p: 4,
+                        }}>
+                            <Typography id="modal-modal-title" variant="h6" component="h2">
+                                [Updates]
+                            </Typography>
+                            <ul>
+                                <li>
+                                <small id="modal-modal-description" sx={{ mt: 2 }}>
+                                    [17/06/2024 8:30AM] New Songs added (include unit songs, 320+ total songs) 
+                                </small>
+                                </li>
+                            </ul>
+
+                            <Typography id="modal-modal-title" variant="h6" component="h2" style={{marginTop:'5px'}}>
+                                [Information]
+                            </Typography>
+                            <small>For bugs report, advice and songs request, feel free to mention or DM me at <a href='https://x.com/rksrbbn'>here.</a></small>
+                        </Box>
+                    </Modal>
                     <a href="https://j-roulette.vercel.app/" target="_blank" style={{ color: 'white', textDecoration: 'none' }}>
                         <div style={{ marginBottom: '30px', cursor: 'pointer', backgroundColor: '#f50057', color: 'white', padding: '10px', borderRadius: '14px' }}>
                             J-Roulette

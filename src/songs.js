@@ -1030,9 +1030,6 @@ export const songs = [
         name: 'Scrap & Build',
     },
     {
-        name: 'Beloklah ke Kanan! (Migi e Magare!)',
-    },
-    {
         name: 'Kesepakatan Genjatan Senjata (Kyusen Kyotei)',
     },
     {

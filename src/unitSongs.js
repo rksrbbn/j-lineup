@@ -84,6 +84,90 @@ export const unitSongs = [
         total_member: 4,
     },
 
+    // MATAHARI MILIKKU
+    {
+        name: 'Jangan Panggil Diriku Idol',
+        setlist: 'Matahari Milikku',
+        theme: 'cute',
+        dance_level: 1,
+        vocal_level: 1,
+        total_member: 5,
+    },
+    {
+        name: 'Aku, Juliette dan Jet Coaster',
+        setlist: 'Matahari Milikku',
+        theme: 'cute',
+        dance_level: 1,
+        vocal_level: 1,
+        total_member: 3,
+    },
+    {
+        name: 'Cinta Higurashi',
+        setlist: 'Matahari Milikku',
+        theme: 'cute',
+        dance_level: 1,
+        vocal_level: 1,
+        total_member: 2,
+    },
+    {
+        name: 'Pertahanan akan Cinta',
+        setlist: 'Matahari Milikku',
+        theme: 'cute',
+        dance_level: 1,
+        vocal_level: 1,
+        total_member: 3,
+    },
+    {
+        name: 'Bunga Matahari',
+        setlist: 'Matahari Milikku',
+        theme: 'cute',
+        dance_level: 1,
+        vocal_level: 1,
+        total_member: 4,
+    },
+    
+    // DEMI SESEORANG
+    {
+        name: 'Bird',
+        setlist: 'Demi Seseorang',
+        theme: 'cute',
+        dance_level: 1,
+        vocal_level: 1,
+        total_member: 3,
+    },
+    {
+        name: 'Jatuhkan dengan Kiss-Bye!',
+        setlist: 'Demi Seseorang',
+        theme: 'cute',
+        dance_level: 1,
+        vocal_level: 1,
+        total_member: 6,
+    },
+    {
+        name: 'Khayalan',
+        setlist: 'Demi Seseorang',
+        theme: 'cute',
+        dance_level: 1,
+        vocal_level: 1,
+        total_member: 2,
+    },
+    {
+        name: 'Rider',
+        setlist: 'Demi Seseorang',
+        theme: 'cute',
+        dance_level: 1,
+        vocal_level: 1,
+        total_member: 5,
+    },
+    {
+        name: 'Seragam Ini Sangat Mengganggu',
+        setlist: 'Demi Seseorang',
+        theme: 'cute',
+        dance_level: 1,
+        vocal_level: 1,
+        total_member: 8,
+    },
+
     // INGIN BERTEMU
     {
         name: 'Boneka yang Sedih',
@@ -217,6 +301,168 @@ export const unitSongs = [
         vocal_level: 1,
         total_member: 5,
     },
+    
+    // GADIS-GADIS REMAJA (SG)
+    {
+        name: 'Blue Rose',
+        setlist: 'Gadis-Gadis Remaja',
+        theme: 'cool',
+        dance_level: 1,
+        vocal_level: 1,
+        total_member: 4,
+    },
+    {
+        name: 'Dua orang yang Terlarang',
+        setlist: 'Gadis-Gadis Remaja',
+        theme: 'cool',
+        dance_level: 1,
+        vocal_level: 1,
+        total_member: 2,
+    },
+    {
+        name: 'Kebun Binatang di Saat Hujan',
+        setlist: 'Gadis-Gadis Remaja',
+        theme: 'cool',
+        dance_level: 1,
+        vocal_level: 1,
+        total_member: 8,
+    },
+    {
+        name: 'Musim Panas yang Kacau',
+        setlist: 'Gadis-Gadis Remaja',
+        theme: 'cool',
+        dance_level: 1,
+        vocal_level: 1,
+        total_member: 9,
+    },
+    
+    // SAMBIL MENGGANDENG ERAT TANGANKU (TWT)
+    {
+        name: 'Glory Days',
+        setlist: 'Sambil Menggandeng Erat Tanganku',
+        theme: 'cool',
+        dance_level: 1,
+        vocal_level: 1,
+        total_member: 3,
+    },
+    {
+        name: 'Barcode Hati Ini',
+        setlist: 'Sambil Menggandeng Erat Tanganku',
+        theme: 'cool',
+        dance_level: 1,
+        vocal_level: 1,
+        total_member: 3,
+    },
+    {
+        name: 'Ajak Aku Pergi Menuju ke Wimbledon',
+        setlist: 'Sambil Menggandeng Erat Tanganku',
+        theme: 'cool',
+        dance_level: 1,
+        vocal_level: 1,
+        total_member: 3,
+    },
+    {
+        name: 'Sang Pianis Hujan',
+        setlist: 'Sambil Menggandeng Erat Tanganku',
+        theme: 'cool',
+        dance_level: 1,
+        vocal_level: 1,
+        total_member: 3,
+    },
+    {
+        name: 'Keberadaan Coklat Itu',
+        setlist: 'Sambil Menggandeng Erat Tanganku',
+        theme: 'cool',
+        dance_level: 1,
+        vocal_level: 1,
+        total_member: 4,
+    },
+    
+    // DEWI THEATER
+    {
+        name: 'Cinta Pertamaku, Selamat Siang',
+        setlist: 'Dewi Theater',
+        theme: 'cool',
+        dance_level: 1,
+        vocal_level: 1,
+        total_member: 3,
+    },
+    {
+        name: 'Pada Malam yang Berbadai',
+        setlist: 'Dewi Theater',
+        theme: 'cool',
+        dance_level: 1,
+        vocal_level: 1,
+        total_member: 4,
+    },
+    {
+        name: 'Candy',
+        setlist: 'Dewi Theater',
+        theme: 'cool',
+        dance_level: 1,
+        vocal_level: 1,
+        total_member: 3,
+    },
+    {
+        name: 'Locker Room Boy',
+        setlist: 'Dewi Theater',
+        theme: 'cool',
+        dance_level: 1,
+        vocal_level: 1,
+        total_member: 5,
+    },
+    {
+        name: 'Perbuatan Angin Malam',
+        setlist: 'Dewi Theater',
+        theme: 'cool',
+        dance_level: 1,
+        vocal_level: 1,
+        total_member: 1,
+    },
+    
+    // SBGN
+    {
+        name: 'Return Match',
+        setlist: 'Bel Terakhir Berbunyi',
+        theme: 'cool',
+        dance_level: 1,
+        vocal_level: 1,
+        total_member: 4,
+    },
+    {
+        name: 'Pencuri Cinta Pertama',
+        setlist: 'Bel Terakhir Berbunyi',
+        theme: 'cool',
+        dance_level: 1,
+        vocal_level: 1,
+        total_member: 3,
+    },
+    {
+        name: 'Maafkan, Permataku',
+        setlist: 'Bel Terakhir Berbunyi',
+        theme: 'cool',
+        dance_level: 1,
+        vocal_level: 1,
+        total_member: 4,
+    },
+    {
+        name: 'Benang Sari, Putik, dan Kupu-Kupu Malam',
+        setlist: 'Bel Terakhir Berbunyi',
+        theme: 'cool',
+        dance_level: 1,
+        vocal_level: 1,
+        total_member: 2,
+    },
+    {
+        name: 'Lagu 18 Bersaudari',
+        setlist: 'Bel Terakhir Berbunyi',
+        theme: 'cool',
+        dance_level: 1,
+        vocal_level: 1,
+        total_member: 3,
+    },
+    
+
 ];
 
 export const setlist = [
@@ -227,6 +473,30 @@ export const setlist = [
     {
         name: 'Aturan Anti Cinta',
         picture: 'assets/setlist/aturan_anti_cinta.png'
+    },
+    {
+        name: 'Matahari Milikku',
+        picture: 'assets/setlist/matahari_milikku.png'
+    },
+    {
+        name: 'Demi Seseorang',
+        picture: 'assets/setlist/demi_seseorang.png'
+    },
+    {
+        name: 'Gadis-Gadis Remaja',
+        picture: 'assets/setlist/gadis_gadis_remaja.png'
+    },
+    {
+        name: 'Sambil Menggandeng Erat Tanganku',
+        picture: 'assets/setlist/sambil_menggandeng_erat_tanganku.png'
+    },
+    {
+        name: 'Dewi Theater',
+        picture: 'assets/setlist/dewi_theater.png'
+    },
+    {
+        name: 'Bel Terakhir Berbunyi',
+        picture: 'assets/setlist/bel_terakhir_berbunyi.png'
     },
     {
         name: 'Tunas di Balik Seragam',

@@ -62,6 +62,11 @@ function Pages()
                             <ul>
                                 <li>
                                 <small id="modal-modal-description" sx={{ mt: 2 }}>
+                                    [17/06/2024 3:40PM] Fixed member's alias (Lulu), thanks to @doodlyz1 for the report.
+                                </small>
+                                </li>
+                                <li>
+                                <small id="modal-modal-description" sx={{ mt: 2 }}>
                                     [17/06/2024 8:30AM] New Songs added (include unit songs, 320+ total songs) 
                                 </small>
                                 </li>

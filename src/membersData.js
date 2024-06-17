@@ -383,7 +383,7 @@ export const members = [
 },
   {
     "name": "Lulu Salsabila",
-    "alias": "lulu",
+    "alias": "Lulu",
     "generation": 8,
     "picture": 'assets/member/lulu_salsabila.webp', 
     "graduated": false,

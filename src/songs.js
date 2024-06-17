@@ -294,7 +294,7 @@ export const songs = [
         name: 'Jangan Panggil Diriku Idol (Idol Nante Yobanaide)',
     },
     {
-        name: 'Aku, Juliette dan Jet Coaste (Boku to Juliette to Jet Coaster)',
+        name: 'Aku, Juliette dan Jet Coaster (Boku to Juliette to Jet Coaster)',
     },
     {
         name: 'Cinta Higurashi (Higurashi no Koi)',

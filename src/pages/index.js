@@ -68,6 +68,11 @@ function Pages()
                             <ul>
                                 <li>
                                 <small id="modal-modal-description" sx={{ mt: 2 }}>
+                                    [18/06/2024 8:02PM] User can now add unlisted songs at show lineup creator.
+                                </small>
+                                </li>
+                                <li>
+                                <small id="modal-modal-description" sx={{ mt: 2 }}>
                                     [18/06/2024 2:40PM] User can now choose back dancer at unit song creator.
                                 </small>
                                 </li>

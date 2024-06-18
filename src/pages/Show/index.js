@@ -6,9 +6,6 @@ import { useEffect, useState } from 'react';
 import { clearShow, addShow, addShowSongs, clearShowSongs } from '../../db';
 import { members } from '../../membersData';
 import { songs } from '../../songs';
-import AddIcon from '@mui/icons-material/Add';
-import IconButton from '@mui/material/IconButton';
-import RemoveIcon from '@mui/icons-material/Remove';
 
 function Show() {
     const navigate = useNavigate();
@@ -19,17 +16,18 @@ function Show() {
     const [selectedMembers, setSelectedMembers] = useState([]);
     const [selectedCenter, setSelectedCenter] = useState(null);
     // const [selectedSong, setSelectedSong] = useState([]);
-    const [songInputs, setSongInputs] = useState([{ id: 1, value: '' }]);
+    const [songInputs, setSongInputs] = useState([{ id: 1, value: '', type: 'autocomplete' }]);
     const [error, setError] = useState(false);
     const [errorMessage, setErrorMessage] = useState('');
 
-    const handleAddSongInput = () => {
-        setSongInputs([...songInputs, { id: songInputs.length + 1, value: '' }]);
+    const handleAddSongInput = (inputType) => {
+        setSongInputs([...songInputs, { id: songInputs.length + 1, value: '', type: inputType }]);
     };
 
     const handleSongInputChange = (id, newValue) => {
         setSongInputs(songInputs.map(input => input.id === id ? { ...input, value: newValue } : input));
     };
+
     const handleRemoveSongInput = (index) => {
         if (songInputs.length > 1) {
             setSongInputs(songInputs.filter((_, i) => i !== index));
@@ -230,36 +228,50 @@ function Show() {
                     </FormControl>
 
                 <FormControl fullWidth variant='filled' style={{ marginBottom: '30px' }}>
-                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                        <IconButton onClick={handleAddSongInput} color="success" aria-label="add song">
+                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom:'10px' }}>
+                        {/* <IconButton onClick={() => handleAddSongInput('autocomplete')} color="success" aria-label="add song">
                             <AddIcon /> 
-                        </IconButton>
-                    
-                        <IconButton onClick={() => handleRemoveSongInput(songInputs.length - 1)} color="error" aria-label="remove song">
+                        </IconButton> */}
+                        <Button variant='outlined' size='small' color='success' onClick={() => handleAddSongInput('autocomplete')}><small>Add New Song</small></Button>
+                        <Button variant='outlined' size='small' color='warning' onClick={() => handleAddSongInput('text')}><small>Add Unlisted Song</small></Button>
+                        <Button variant='outlined' size='small' color='error' onClick={() => handleRemoveSongInput(songInputs.length - 1)}><small>Remove Last Song</small></Button>
+                        {/* <IconButton onClick={() => handleRemoveSongInput(songInputs.length - 1)} color="error" aria-label="remove song">
                             <RemoveIcon />
-                        </IconButton>
+                        </IconButton> */}
                     </div>
                     {songInputs.map((input, index) => (
                         <FormControl key={input.id} fullWidth variant='filled' style={{ marginBottom: '30px', display: 'flex'}}>
-                            <Autocomplete
-                                id={`song-autocomplete-${input.id}`}
-                                options={songs.map((song) => song.name).sort()}
-                                value={input.value}
-                                onChange={(event, newValue) => handleSongInputChange(input.id, newValue)}
-                                renderInput={(params) => (
-                                    <TextField
-                                        {...params}
-                                        label={`Select Song - M${input.id.toString().padStart(2, '0')}`}
-                                        variant="filled"
-                                    />
-                                )}
-                                getOptionLabel={(option) => option}
-                                filterOptions={(options, { inputValue }) => {
-                                    return options.filter(option => option.toLowerCase().includes(inputValue.toLowerCase()));
-                                }}
-                                isOptionEqualToValue={(option, value) => option === value}
-                                required
-                            />
+                             {input.type === 'autocomplete' ? (
+                                <Autocomplete
+                                    id={`song-autocomplete-${input.id}`}
+                                    options={songs.map((song) => song.name).sort()}
+                                    value={input.value}
+                                    onChange={(event, newValue) => handleSongInputChange(input.id, newValue)}
+                                    renderInput={(params) => (
+                                        <TextField
+                                            {...params}
+                                            label={`Select Song - M${input.id.toString().padStart(2, '0')}`}
+                                            variant="filled"
+                                        />
+                                    )}
+                                    getOptionLabel={(option) => option}
+                                    filterOptions={(options, { inputValue }) => {
+                                        return options.filter(option => option.toLowerCase().includes(inputValue.toLowerCase()));
+                                    }}
+                                    isOptionEqualToValue={(option, value) => option === value}
+                                    required
+                                />
+                            ) : (
+                                <TextField
+                                    id={`song-text-${input.id}`}
+                                    label={`Type Song Name - M${input.id.toString().padStart(2, '0')}`}
+                                    variant="filled"
+                                    value={input.value}
+                                    onChange={(event) => handleSongInputChange(input.id, event.target.value)}
+                                    fullWidth
+                                    required
+                                />
+                            )}
                            
                         </FormControl>
                     ))}

@@ -105,7 +105,7 @@ function UnitSong() {
             {setlist.map((setlistItem) => (
               <MenuItem key={setlistItem.name} value={setlistItem.name}>
                 <Avatar src={setlistItem.picture} alt={setlistItem.name} style={{ marginRight: '10px' }} />
-                {setlistItem.name}
+                <small>{setlistItem.name}</small>
               </MenuItem>
             ))}
           </Select>

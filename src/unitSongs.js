@@ -462,6 +462,133 @@ export const unitSongs = [
         total_member: 3,
     },
     
+    // SAKA AGARI
+    {
+        name: 'End Roll',
+        setlist: 'Saka Agari',
+        theme: 'cool',
+        dance_level: 1,
+        vocal_level: 1,
+        total_member: 4,
+    },
+    {
+        name: 'Si Bintang Jatuh yang Egois',
+        setlist: 'Saka Agari',
+        theme: 'cool',
+        dance_level: 1,
+        vocal_level: 1,
+        total_member: 2,
+    },
+    {
+        name: 'Warna Cinta',
+        setlist: 'Saka Agari',
+        theme: 'cool',
+        dance_level: 1,
+        vocal_level: 1,
+        total_member: 6,
+    },
+    {
+        name: 'Jika Aku Dipelukmu',
+        setlist: 'Saka Agari',
+        theme: 'cool',
+        dance_level: 1,
+        vocal_level: 1,
+        total_member: 3,
+    },
+    {
+        name: 'Balada Serangga',
+        setlist: 'Saka Agari',
+        theme: 'cool',
+        dance_level: 1,
+        vocal_level: 1,
+        total_member: 1,
+    },
+    
+    // TADAIMA RENAICHUU
+    {
+        name: 'Cinta Pertama di Jam 7 lewat 12',
+        setlist: 'Sekarang Sedang Jatuh Cinta',
+        theme: 'cool',
+        dance_level: 1,
+        vocal_level: 1,
+        total_member: 5,
+    },
+    {
+        name: 'Sampai Musim Semi Tiba',
+        setlist: 'Sekarang Sedang Jatuh Cinta',
+        theme: 'cool',
+        dance_level: 1,
+        vocal_level: 1,
+        total_member: 2,
+    },
+    {
+        name: 'Cinta yang Tulus, Crescendo',
+        setlist: 'Sekarang Sedang Jatuh Cinta',
+        theme: 'cool',
+        dance_level: 1,
+        vocal_level: 1,
+        total_member: 3,
+    },
+    {
+        name: 'Faint',
+        setlist: 'Sekarang Sedang Jatuh Cinta',
+        theme: 'cool',
+        dance_level: 1,
+        vocal_level: 1,
+        total_member: 3,
+    },
+    {
+        name: 'Pulang Kampung',
+        setlist: 'Sekarang Sedang Jatuh Cinta',
+        theme: 'cool',
+        dance_level: 1,
+        vocal_level: 1,
+        total_member: 3,
+    },
+    
+    // FAJAR SANG IDOLA (IDOL NO YOAKE)
+    {
+        name: 'Gadis yang Celaka',
+        setlist: 'Fajar Sang Idola',
+        theme: 'cool',
+        dance_level: 1,
+        vocal_level: 1,
+        total_member: 3,
+    },
+    {
+        name: 'Berikan Coklat dengan Bibir',
+        setlist: 'Fajar Sang Idola',
+        theme: 'cool',
+        dance_level: 1,
+        vocal_level: 1,
+        total_member: 3,
+    },
+    {
+        name: 'Garis Diagonal Cinta Searah',
+        setlist: 'Fajar Sang Idola',
+        theme: 'cool',
+        dance_level: 1,
+        vocal_level: 1,
+        total_member: 3,
+    },
+    {
+        name: 'Berandalan di Surga',
+        setlist: 'Fajar Sang Idola',
+        theme: 'cool',
+        dance_level: 1,
+        vocal_level: 1,
+        total_member: 4,
+    },
+    {
+        name: 'Natasha yang Ku Cinta',
+        setlist: 'Fajar Sang Idola',
+        theme: 'cool',
+        dance_level: 1,
+        vocal_level: 1,
+        total_member: 3,
+    },
+
+    
 
 ];
 
@@ -497,6 +624,18 @@ export const setlist = [
     {
         name: 'Bel Terakhir Berbunyi',
         picture: 'assets/setlist/bel_terakhir_berbunyi.png'
+    },
+    {
+        name: 'Saka Agari',
+        picture: 'assets/setlist/saka_agari.png'
+    },
+    {
+        name: 'Sekarang Sedang Jatuh Cinta',
+        picture: 'assets/setlist/sekarang_sedang_jatuh_cinta.png'
+    },
+    {
+        name: 'Fajar Sang Idola',
+        picture: 'assets/setlist/fajar_sang_idola.png'
     },
     {
         name: 'Tunas di Balik Seragam',

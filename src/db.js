@@ -3,7 +3,7 @@ import Dexie from "dexie";
 export const db = new Dexie("j-lineup");
 
 db.version(1).stores({
-  lineup: "++id, unitSongName, unitSongSetlist, members, center, creatorName",
+  lineup: "++id, unitSongName, unitSongSetlist, members, center, creatorName, showSetlist",
   show: "++idShow, showName, showDate, showLocation, showMembers",
   showSongs: "++idShowSongs, showId, songName"
 });

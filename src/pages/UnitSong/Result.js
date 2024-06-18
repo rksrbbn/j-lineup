@@ -62,17 +62,19 @@ function Result() {
             <HeaderApp />
             <Container className="App" maxWidth="sm">
 
-                <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '20px', marginTop: '50px'}}>
-                    <img src={setlistData?.picture} alt="Setlist Image" style={{ width: '100px', height: '100px', border:'2px solid #c4317a' }} />
-                </div>
+                {lineup?.[0]?.showSetlist && (
+                    <div style={{ display: 'flex', justifyContent: 'center', marginTop: '50px'}}>
+                        <img src={setlistData?.picture} alt="Setlist Image" style={{ width: '100px', height: '100px', border:'2px solid #c4317a' }} />
+                    </div>
+                )}
 
-                <div style={{ marginBottom: '20px', textAlign: 'center' }}>
-                    <p style={{ color: '#c4317a', borderRadius: '2px', padding: '2px', width: '50%', margin: 'auto', fontSize: { xs: '16px', sm: '18px', md: '20px', lg: '24px', xl: '26px' }  }}>
+                <div style={{ marginBottom: '20px', marginTop:'20px', textAlign: 'center' }}>
+                    {/* <p style={{ color: '#c4317a', borderRadius: '2px', padding: '2px', width: '50%', margin: 'auto', fontSize: { xs: '16px', sm: '18px', md: '20px', lg: '24px', xl: '26px' }  }}>
                         {lineup?.[0]?.unitSongName}
-                    </p>
-                    {/* {lineup?.[0]?.creatorName != '' && (
-                        <p style={{ color: '#c4317a', fontSize: '12px' }}>Lineup by {lineup?.[0]?.creatorName}</p>
-                    )} */}
+                    </p> */}
+                    <Typography variant='h4' style={{ background: 'linear-gradient(to right, red, purple)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
+                        {lineup?.[0]?.unitSongName}
+                    </Typography>
                 </div>
 
                 <div style={{ marginBottom: '20px', textAlign: 'center' }}>
@@ -96,8 +98,8 @@ function Result() {
                                     alt={item.alias}
                                     style={{ marginBottom: '20px', border: '2px solid #db5198' }} // Menambahkan border
                                     sx={{
-                                        width: { xs: 60, sm: 65, md: 75, lg: 80 },
-                                        height: { xs: 60, sm: 65, md: 75, lg: 80 }
+                                        width: { xs: 40, sm: 40, md: 50, lg: 55 },
+                                        height: { xs: 40, sm: 40, md: 50, lg: 55 }
                                     }}
                                 />
                             </Badge>

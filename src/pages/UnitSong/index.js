@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import {members} from '../../membersData';
 import {unitSongs, setlist} from '../../unitSongs';
-import { Container, FormControl, InputLabel, Select, MenuItem, Button, Avatar, Alert, Typography, TextField } from '@mui/material';
+import { Container, FormControl, InputLabel, Select, MenuItem, Button, Avatar, Alert, Typography, TextField, Switch, FormControlLabel } from '@mui/material';
 import HeaderApp from '../../components/HeaderApp';
 import FooterApp from '../../components/FooterApp';
 import { addLineup, clearLineup } from '../../db';
@@ -14,6 +14,7 @@ function UnitSong() {
   const [unitSongMembers, setUnitSongMembers] = useState(0);
   const [selectedCenter, setSelectedCenter] = useState('');
   const [creatorName, setCreatorName] = useState('');
+  const [showSetlist, setshowSetlist] = useState(true);
   const [error, setError] = useState(false);
   const navigate = useNavigate();
   // panggil fungsi clearlineup ketika berada di halaman ini
@@ -66,11 +67,16 @@ function UnitSong() {
       unitSongSetlist: selectedSetlist,
       members: selectedMembers.join(', '),
       center: selectedCenter,
-      creatorName: creatorName
+      creatorName: creatorName,
+      showSetlist: showSetlist
     };
     addLineup(lineup);
     navigate('/result');
   };
+
+  const handleSwitch = () => {
+    setshowSetlist(!showSetlist)
+  }
 
   return (
     <div style={{ backgroundColor: '#FDECEF', minHeight: '100vh', marginTop: 0, display: 'flex', flexDirection: 'column' }}>
@@ -87,6 +93,14 @@ function UnitSong() {
         </Alert>
       )}
         <p style={{ textDecoration: 'underline', cursor: 'pointer', color: '#f50057', fontSize: '12px', textAlign: 'left' }} onClick={() => navigate('/')}>Back to Home</p>
+
+        <FormControlLabel control={
+          <Switch 
+            color='error' checked={showSetlist}
+            onChange={handleSwitch} 
+          />
+        } label="Show Setlist Image" />
+
         <FormControl fullWidth variant='filled' style={{ marginBottom: '30px' }}>
           <InputLabel id="setlist-select-label" sx={{ fontSize: { xs: '10px', sm: '12px', md: '14px', lg: '16px' } }}>Setlist</InputLabel>
           <Select
@@ -110,7 +124,7 @@ function UnitSong() {
             ))}
           </Select>
         </FormControl>
-
+          
         {selectedSetlist && (
           
           <FormControl fullWidth variant='filled' style={{ marginBottom: '30px' }}>

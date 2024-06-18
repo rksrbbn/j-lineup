@@ -1,10 +1,11 @@
 import { useState, useEffect } from "react";
-import { Container, Typography, Divider, Grid, Avatar, Badge, Tooltip, Box, Button } from "@mui/material";
+import { Container, Typography, Divider, Grid, Avatar, Badge, Tooltip, Box, Button, Modal } from "@mui/material";
 import HeaderApp from "../../components/HeaderApp";
 import FooterApp from "../../components/FooterApp";
 import { getShow, getShowSongs } from "../../db";
 import { useNavigate } from "react-router-dom";
 import { members } from "../../membersData";
+import { PieChart, pieArcLabelClasses  } from "@mui/x-charts";
 
 
 function ResultShow() {
@@ -39,6 +40,44 @@ function ResultShow() {
         fetchData();
     }, []);
 
+    // DATA FOR CHART
+    const countMembersByRole = (memberList) => {
+        return memberList.reduce((acc, member) => {
+            if (member.trainee === true) {
+                acc.trainee += 1;
+            } else {
+                acc.nonTrainee += 1;
+            }
+            return acc;
+        }, { trainee: 0, nonTrainee: 0 });
+    };
+
+    const memberCountsByRole = countMembersByRole(memberList);
+
+    const chartData = [
+        { id: 0, value: memberCountsByRole.trainee, label: 'Trainee' },
+        { id: 1, value: memberCountsByRole.nonTrainee, label: 'Active' }
+    ];
+
+    const countMembersByGeneration = (members) => {
+        return members.reduce((acc, member) => {
+            const generation = member.generation;
+            if (!acc[generation]) {
+                acc[generation] = 0;
+            }
+            acc[generation] += 1;
+            return acc;
+        }, {});
+    };
+
+    const memberCountsByGeneration = countMembersByGeneration(memberList);
+    const chartData2 = Object.keys(memberCountsByGeneration).map((generation, index) => ({
+        id: index,
+        value: memberCountsByGeneration[generation],
+        label: `Gen ${generation}`
+    }));
+
+    const [showStats, setShowStats] = useState(false)
 
     return (
         <div style={{ backgroundColor: '#FDECEF', minHeight: '100vh', marginTop: 0, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
@@ -106,10 +145,76 @@ function ResultShow() {
                         M{(index + 1).toString().padStart(2, '0')}. {song.songName}
                     </Box>
                 ))}
+
+
+                {showStats && (
+                    <div style={{marginTop:'50px', display:'flex', flexDirection:'column', alignItems:'center', textAlign:'center'}}>
+                        <Divider style={{ width: '100%', marginBottom: '20px' }}><Typography variant="h6" color="#c4317a">Lineup Stats</Typography></Divider>
+                        <PieChart
+                        series={[
+                            {
+                                arcLabel: (item) => `${item.value}`,
+                                // arcLabelMinAngle: 45,
+                                data: chartData,
+                                outerRadius:80,
+                                cx: '50%',
+                                cy: '50%',
+                            },
+                        ]}
+                        slotProps={{
+                            legend: {
+                              labelStyle: {
+                                fontSize: 14,
+                                fill: '#c4317a',
+                              },
+                            },
+                          }}
+                        sx={{
+                            [`& .${pieArcLabelClasses.root}`]: {
+                                fill: 'white',
+                                fontWeight: 'light',
+                            },
+                            }}
+                        height={200}
+                        />
+
+                        <PieChart
+                        series={[
+                            {
+                                arcLabel: (item) => `${item.value}`,
+                                // arcLabelMinAngle: 45,
+                                data: chartData2,
+                                outerRadius:80,
+                                cx: '50%',
+                                cy: '50%'
+                            },
+                        ]}
+                        slotProps={{
+                            legend: {
+                              labelStyle: {
+                                fontSize: 14,
+                                fill: '#c4317a',
+                              },
+                            },
+                          }}
+                        sx={{
+                            [`& .${pieArcLabelClasses.root}`]: {
+                                fill: 'white',
+                                fontWeight: 'light',
+                            },
+                            }}
+                        height={200}
+                        />
+                    </div>
+                )}
+
                 <div style={{ marginTop: '50px', textAlign: 'center', display: 'flex', justifyContent: 'space-between' }}>
-                    <Button variant="outlined" color="error" onClick={() => navigate('/show')}>CREATE NEW SHOW</Button>
-                    <Button variant="outlined" color="error" onClick={() => navigate('/')}>BACK TO HOME</Button>
+                    <Button size="small" variant="outlined" color="error" onClick={() => navigate('/show')}>CREATE NEW SHOW</Button>
+                    <Button size="small" variant="outlined" color="error" onClick={() => setShowStats(!showStats)}>{!showStats ? 'SHOW STATS' : 'HIDE STATS'}</Button>
+                    <Button size="small" variant="outlined" color="error" onClick={() => navigate('/')}>BACK TO HOME</Button>
                 </div>
+                        
+                            
             </Container>
             <FooterApp/>
         </div>

@@ -32,6 +32,7 @@ export const unitSongs = [
         dance_level: 1,
         vocal_level: 1,
         total_member: 3,
+        back_dancer: 6
     },
     {
         name: 'Joan of Arc Didalam Cermin',
@@ -82,6 +83,7 @@ export const unitSongs = [
         dance_level: 1,
         vocal_level: 1,
         total_member: 4,
+        back_dancer: 6
     },
 
     // MATAHARI MILIKKU
@@ -92,6 +94,7 @@ export const unitSongs = [
         dance_level: 1,
         vocal_level: 1,
         total_member: 5,
+        back_dancer: 6
     },
     {
         name: 'Aku, Juliette dan Jet Coaster',
@@ -344,6 +347,7 @@ export const unitSongs = [
         dance_level: 1,
         vocal_level: 1,
         total_member: 3,
+        back_dancer: 6
     },
     {
         name: 'Barcode Hati Ini',
@@ -570,6 +574,7 @@ export const unitSongs = [
         dance_level: 1,
         vocal_level: 1,
         total_member: 3,
+        back_dancer: 6
     },
     {
         name: 'Berandalan di Surga',
@@ -578,6 +583,7 @@ export const unitSongs = [
         dance_level: 1,
         vocal_level: 1,
         total_member: 4,
+        back_dancer: 6
     },
     {
         name: 'Natasha yang Ku Cinta',

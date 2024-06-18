@@ -12,12 +12,15 @@ import { useNavigate } from 'react-router-dom';
 function UnitSong() {
   const [selectedSetlist, setSelectedSetlist] = useState('');
   const [selectedSong, setSelectedSong] = useState('');
+  const [selectedUnitSong, setSelectedUnitSong] = useState('');
   const [selectedMembers, setSelectedMembers] = useState([]);
+  const [selectedBackDancers, setSelectedBackDancers] = useState([]);
   const [unitSongMembers, setUnitSongMembers] = useState(0);
   const [selectedCenter, setSelectedCenter] = useState('');
   const [creatorName, setCreatorName] = useState('');
   const [showSetlist, setshowSetlist] = useState(true);
   const [error, setError] = useState(false);
+  const [errorMessage, setErrorMessage] = useState('');
   const navigate = useNavigate();
   // panggil fungsi clearlineup ketika berada di halaman ini
   useEffect(() => {
@@ -41,7 +44,7 @@ function UnitSong() {
     
     // Temukan unit song yang dipilih
     const selectedUnitSong = unitSongs.find(song => song.name === selectedSongName);
-
+    setSelectedUnitSong(selectedUnitSong);
     if (selectedSongName !== '') {
       setUnitSongMembers(selectedUnitSong.total_member);
     }
@@ -59,18 +62,38 @@ function UnitSong() {
   };
 
   const createLineup = () => {
+
     // Jika jumlah selectedMembers kurang dari unitsong.total_member, tampilkan pesan error
     if (selectedMembers.length < unitSongMembers) {
       setError(true);
+      setErrorMessage('Jumlah member tidak boleh kurang dari ' + unitSongMembers + '.')
       return;
     }
+    
+    // Jika jumlah back dancer lebih dari nol dan kurang dari back_dancer
+    if (selectedBackDancers.length > 0 && selectedBackDancers.length < selectedUnitSong.back_dancer)
+    {
+      setError(true);
+      setErrorMessage('Jumlah back dancer tidak boleh kurang dari ' + selectedUnitSong.back_dancer + '. Kosongkan member jika tidak ingin mengisi back dancer.')
+      return;
+    }
+    
+    // Jika Back dancer termasuk ke member utama unit song
+    if (selectedBackDancers.some(value => selectedMembers.includes(value)))
+    {
+      setError(true);
+      setErrorMessage('Back dancer tidak boleh mengandung member utama unit song.')
+      return;
+    }
+
     const lineup = {
       unitSongName: selectedSong,
       unitSongSetlist: selectedSetlist,
       members: selectedMembers.join(', '),
       center: selectedCenter,
       creatorName: creatorName,
-      showSetlist: showSetlist
+      showSetlist: showSetlist,
+      backDancers: selectedBackDancers
     };
     addLineup(lineup);
     navigate('/result');
@@ -101,11 +124,15 @@ function UnitSong() {
           Unit Song Lineup Creator
         </Typography>
 
-      {error && (
-          <Alert severity="error" variant='filled' style={{ marginTop: '20px' }}>
-            Jumlah member tidak boleh kurang dari {unitSongMembers}
-        </Alert>
-      )}
+        {error && (
+                    <Alert severity="error" variant='filled' style={{ 
+                        position: 'fixed', top: '10px', left: '50%', transform: 'translateX(-50%)', zIndex: 1000 ,
+                        fontSize: { xs: '8px', sm: '10px', md: '12px', lg: '14px' }
+                        }}>
+                        {errorMessage}
+                    </Alert>
+                )}
+
         <p style={{ textDecoration: 'underline', cursor: 'pointer', color: '#f50057', fontSize: '12px', textAlign: 'left' }} onClick={() => navigate('/')}>Back to Home</p>
 
         <FormControlLabel control={
@@ -266,6 +293,69 @@ function UnitSong() {
             </Select>
           </FormControl>
         )}
+
+      {/* Back Dancer */}
+        {selectedMembers.length > 0 && selectedUnitSong.back_dancer ? (
+          selectedUnitSong.back_dancer > 0 && (
+            <div style={{ marginBottom: '30px' }}>
+            <small data-testid="WarningIcon" style={{ color: 'red' }}>*Anda harus memilih {selectedUnitSong.back_dancer} member untuk lagu ini (Opsional).</small>
+          
+            <FormControl fullWidth variant='filled'>
+                <InputLabel id="backdancer-multi-select-label" sx={{ fontSize: { xs: '10px', sm: '12px', md: '14px', lg: '16px' } }}>Back Dancers (Optional)</InputLabel>
+                <Select
+                  labelId="backdancer-multi-select-label"
+                  multiple
+                  value={selectedBackDancers}
+                  onChange={(event) => {
+                    const {
+                      target: { value },
+                    } = event;
+                    // Batasi jumlah member yang dipilih sesuai dengan Back Dancer
+                    const selected = typeof value === 'string' ? value.split(',') : value;
+                    if (selected.length <= selectedUnitSong.back_dancer) {
+                      setSelectedBackDancers(selected);
+                    } else {
+                      // Jika melebihi, potong array untuk membatasi jumlahnya
+                      setSelectedBackDancers(selected.slice(0, selectedUnitSong.back_dancer));
+                    }
+                  } }
+                  renderValue={(selected) => (
+                    <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap' }}>
+                      {selected.map((value) => (
+                        <div key={value} style={{ paddingRight: '5px', paddingLeft: '5px', backgroundColor: '#f50057', borderRadius: '15px', color: 'white', fontSize: { xs: '10px', sm: '12px', md: '14px', lg: '16px' } }}>
+                          {value}
+                        </div>
+                      ))}
+                    </div>
+                  )}
+                  MenuProps={{
+                    PaperProps: {
+                      style: {
+                        maxHeight: 48 * 4.5 + 8,
+                        width: 250,
+                      },
+                    },
+                  }}
+                >
+                  {members.sort((a, b) => a.alias.localeCompare(b.alias)).map((member) => (
+                    <MenuItem key={member.name} value={member.alias}>
+
+                      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', width: '100%' }}>
+                        <div style={{ display: 'flex', alignItems: 'center' }}>
+                          <Avatar src={member.picture} alt={member.alias} />
+                          <p style={{ marginLeft: '10px' }}>{member.alias}</p>
+                        </div>
+                        {member.trainee ? <img src="assets/icons/trainee_icon.png" alt="Trainee" style={{ width: '48px' }} /> : <img src="assets/icons/member_icon.png" alt="Member" style={{ width: '48px' }} />}
+                      </div>
+
+                    </MenuItem>
+                  ))}
+                </Select>
+
+              </FormControl>
+          </div>
+          )
+        ) : null}
 
         {selectedSetlist && selectedSong && selectedMembers.length > 0 && (
           <FormControl fullWidth variant='filled' style={{ marginBottom: '30px' }}>

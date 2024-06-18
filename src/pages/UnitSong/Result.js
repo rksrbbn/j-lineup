@@ -11,6 +11,7 @@ function Result() {
 
     const [lineup, setLineup] = useState([]);
     const [memberList, setMemberList] = useState([]);
+    const [backDancerList, setBackDancerList] = useState([]);
     const [setlistData, setSetlistData] = useState([]);
     const navigate = useNavigate();
 
@@ -45,6 +46,13 @@ function Result() {
                   return memberData ? memberData : { alias: alias, name: "Unknown", role: "Unknown" };
                 });
                 setMemberList(memberObjects);
+                
+                const backDancerObjects = firstData.backDancers.map(alias => {
+                    const memberData = searchMemberDataByAlias(alias.trim()); // Trim alias untuk menghapus spasi ekstra
+                    return memberData ? memberData : { alias: alias, name: "Unknown", role: "Unknown" };
+                })
+                setBackDancerList(backDancerObjects);
+
                 const setlistData = searchSetlist(firstData.unitSongSetlist);
                 setSetlistData(setlistData);
             } else {
@@ -93,7 +101,7 @@ function Result() {
                                 <Avatar
                                     src={item.picture}
                                     alt={item.alias}
-                                    style={{ marginBottom: '20px', border: '2px solid #db5198' }} // Menambahkan border
+                                    style={{ marginBottom: '10px', border: '2px solid #db5198' }} // Menambahkan border
                                     sx={{
                                         width: { xs: 40, sm: 40, md: 50, lg: 55 },
                                         height: { xs: 40, sm: 40, md: 50, lg: 55 }
@@ -108,6 +116,33 @@ function Result() {
                         </Grid>
                     ))}
                 </Grid>
+
+                {/* Back Dancer */}
+                {backDancerList.length > 0 && (
+                    <><div style={{ marginTop:'20px', marginBottom: '20px', textAlign: 'center' }}>
+                        <Divider><Typography variant='h6' color='#c4317a'>Back Dancer</Typography></Divider>
+                    </div>
+                    <Grid container spacing={2} justifyContent="center" style={{ marginTop: '20px', fontSize: { xs: '10px', sm: '12px', md: '14px', lg: '16px' } }}>
+                            {backDancerList.map((item) => (
+                                <Grid item xs={3} sm={3} md={3} lg={3} key={item.name} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', position: 'relative' }}>
+                                    
+                                        <Avatar
+                                            src={item.picture}
+                                            alt={item.alias}
+                                            style={{ marginBottom: '10px', border: '2px solid #db5198' }} // Menambahkan border
+                                            sx={{
+                                                width: { xs: 35, sm: 35, md: 40, lg: 45 },
+                                                height: { xs: 35, sm: 35, md: 40, lg: 45 }
+                                            }} />
+                                    <div style={{ textAlign: 'center', width: '100%' }}>
+                                        <Typography component="div" style={{ color: '#db5198', backgroundColor: '#fff', borderRadius: '4px', padding: '2px', fontSize: { xs: '10px', sm: '12px', md: '14px', lg: '16px' } }}>
+                                            {item.alias}
+                                        </Typography>
+                                    </div>
+                                </Grid>
+                            ))}
+                        </Grid></>
+                )}
 
                 <div style={{ marginTop: '50px', textAlign: 'center' }}>
                     {lineup?.[0]?.creatorName != '' && (

@@ -68,6 +68,11 @@ function Pages()
                             <ul>
                                 <li>
                                 <small id="modal-modal-description" sx={{ mt: 2 }}>
+                                    [18/06/2024 2:40PM] User can now choose back dancer at unit song creator.
+                                </small>
+                                </li>
+                                <li>
+                                <small id="modal-modal-description" sx={{ mt: 2 }}>
                                     [18/06/2024 12:14PM] New Songs added (From 11th Anniversary Concert).
                                 </small>
                                 </li>

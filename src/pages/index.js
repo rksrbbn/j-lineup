@@ -64,7 +64,12 @@ function Pages()
                             <ul>
                                 <li>
                                 <small id="modal-modal-description" sx={{ mt: 2 }}>
-                                    [18/06/2024 11:07AM] Revive Past Setlist at Unit Song Creator
+                                    [18/06/2024 11:33AM] User can now choose to not display setlist image at unit song creator.
+                                </small>
+                                </li>
+                                <li>
+                                <small id="modal-modal-description" sx={{ mt: 2 }}>
+                                    [18/06/2024 11:07AM] Revive Past Setlist at Unit Song Creator.
                                 </small>
                                 </li>
                                 <li>

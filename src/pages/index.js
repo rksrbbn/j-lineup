@@ -68,6 +68,11 @@ function Pages()
                             <ul>
                                 <li>
                                 <small id="modal-modal-description" sx={{ mt: 2 }}>
+                                    [18/06/2024 12:14PM] New Songs added (From 11th Anniversary Concert).
+                                </small>
+                                </li>
+                                <li>
+                                <small id="modal-modal-description" sx={{ mt: 2 }}>
                                     [18/06/2024 11:33AM] User can now choose to not display setlist image at unit song creator.
                                 </small>
                                 </li>
@@ -78,7 +83,7 @@ function Pages()
                                 </li>
                                 <li>
                                 <small id="modal-modal-description" sx={{ mt: 2 }}>
-                                    [17/06/2024 11:47PM] New Songs added (From B.E.L.I.E.V.E Team J & K3) 
+                                    [17/06/2024 11:47PM] New Songs added (From B.E.L.I.E.V.E Team J & K3).
                                 </small>
                                 </li>
                                 <li>

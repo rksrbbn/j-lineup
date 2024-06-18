@@ -58,7 +58,11 @@ function Pages()
                             outline: 'none', // Remove outline
                             p: 4
                         }}>
-                            <Typography id="modal-modal-title" variant="h6" component="h2">
+                             <Typography id="modal-modal-title" variant="h6" component="h2" style={{marginTop:'5px'}}>
+                                [Information]
+                            </Typography>
+                            <small>Follow me for new updates! also for bugs report, advice and songs request, feel free to mention or DM me at <a href='https://x.com/rksrbbn'>here.</a></small>
+                            <Typography id="modal-modal-title" variant="h6" component="h2" style={{marginTop:'10px'}}>
                                 [Updates]
                             </Typography>
                             <ul>
@@ -89,10 +93,7 @@ function Pages()
                                 </li>
                             </ul>
 
-                            <Typography id="modal-modal-title" variant="h6" component="h2" style={{marginTop:'5px'}}>
-                                [Information]
-                            </Typography>
-                            <small>For bugs report, advice and songs request, feel free to mention or DM me at <a href='https://x.com/rksrbbn'>here.</a></small>
+                           
                         </Box>
                     </Modal>
                     <a href="https://j-roulette.vercel.app/" target="_blank" style={{ color: 'white', textDecoration: 'none' }}>

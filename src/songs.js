@@ -1035,6 +1035,17 @@ export const songs = [
     {
         name: 'Team KIII Oshi',
     },
-
+    
+    // 11th ANNIVERSARY CONCERT
+    {
+        name: 'Incarlah Center (Ougon Center)',
+    },
+    {
+        name: 'Bibir dari Plastik (Plastic no Kuchibiru)',
+    },
+    {
+        name: 'Kamonegix',
+    },
+    
 ]
 

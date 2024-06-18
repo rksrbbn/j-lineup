@@ -2,6 +2,8 @@ import React, {useState, useEffect} from 'react';
 import {members} from '../../membersData';
 import {unitSongs, setlist} from '../../unitSongs';
 import { Container, FormControl, InputLabel, Select, MenuItem, Button, Avatar, Alert, Typography, TextField, Switch, FormControlLabel } from '@mui/material';
+import { pink } from '@mui/material/colors';
+import { alpha, styled } from '@mui/material/styles';
 import HeaderApp from '../../components/HeaderApp';
 import FooterApp from '../../components/FooterApp';
 import { addLineup, clearLineup } from '../../db';
@@ -74,6 +76,18 @@ function UnitSong() {
     navigate('/result');
   };
 
+  const PinkSwitch = styled(Switch)(({ theme }) => ({
+    '& .MuiSwitch-switchBase.Mui-checked': {
+      color: pink[600],
+      '&:hover': {
+        backgroundColor: alpha(pink[600], theme.palette.action.hoverOpacity),
+      },
+    },
+    '& .MuiSwitch-switchBase.Mui-checked + .MuiSwitch-track': {
+      backgroundColor: pink[600],
+    },
+  }));
+
   const handleSwitch = () => {
     setshowSetlist(!showSetlist)
   }
@@ -95,8 +109,8 @@ function UnitSong() {
         <p style={{ textDecoration: 'underline', cursor: 'pointer', color: '#f50057', fontSize: '12px', textAlign: 'left' }} onClick={() => navigate('/')}>Back to Home</p>
 
         <FormControlLabel control={
-          <Switch 
-            color='error' checked={showSetlist}
+          <PinkSwitch 
+            color='default' checked={showSetlist}
             onChange={handleSwitch} 
           />
         } label="Show Setlist Image" />

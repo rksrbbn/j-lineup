@@ -62,13 +62,10 @@ function Result() {
             <HeaderApp />
             <Container className="App" maxWidth="sm">
 
-                {lineup?.[0]?.showSetlist && (
-                    <div style={{ display: 'flex', justifyContent: 'center', marginTop: '50px'}}>
-                        <img src={setlistData?.picture} alt="Setlist Image" style={{ width: '100px', height: '100px', border:'2px solid #c4317a' }} />
-                    </div>
-                )}
-
-                <div style={{ marginBottom: '20px', marginTop:'20px', textAlign: 'center' }}>
+                <div style={{ marginBottom: '20px', marginTop:'50px', textAlign: 'center' }}>
+                    {lineup?.[0]?.showSetlist && (
+                        <img src={setlistData?.picture} alt="Setlist Image" style={{ width: '100px', height: '100px', marginBottom:'20px', border:'2px solid #c4317a' }} />
+                    )}
                     {/* <p style={{ color: '#c4317a', borderRadius: '2px', padding: '2px', width: '50%', margin: 'auto', fontSize: { xs: '16px', sm: '18px', md: '20px', lg: '24px', xl: '26px' }  }}>
                         {lineup?.[0]?.unitSongName}
                     </p> */}

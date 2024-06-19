@@ -149,8 +149,9 @@ function ResultShow() {
 
                 {showStats && (
                     <div style={{marginTop:'50px', display:'flex', flexDirection:'column', alignItems:'center', textAlign:'center'}}>
-                        <Divider style={{ width: '100%', marginBottom: '20px' }}><Typography variant="h6" color="#c4317a">Lineup Stats</Typography></Divider>
+                        <Divider style={{ width: '100%' }}><Typography variant="h6" color="#c4317a">Lineup Stats</Typography></Divider>
                         <PieChart
+                        margin={{ top: 100, bottom: 100, left: 100, right:100 }}
                         series={[
                             {
                                 arcLabel: (item) => `${item.value}`,
@@ -166,7 +167,10 @@ function ResultShow() {
                               labelStyle: {
                                 fontSize: 14,
                                 fill: '#c4317a',
-                              },
+                            },
+                            direction: 'row',
+                            position: { vertical: 'bottom', horizontal: 'middle' },
+                            padding: 0,
                             },
                           }}
                         sx={{
@@ -175,10 +179,11 @@ function ResultShow() {
                                 fontWeight: 'light',
                             },
                             }}
-                        height={200}
+                        height={300}
                         />
 
                         <PieChart
+                         margin={{ top: 100, bottom: 100, left: 100, right:100 }}
                         series={[
                             {
                                 arcLabel: (item) => `${item.value}`,
@@ -195,6 +200,9 @@ function ResultShow() {
                                 fontSize: 14,
                                 fill: '#c4317a',
                               },
+                              direction: 'row',
+                                position: { vertical: 'bottom', horizontal: 'middle' },
+                                padding: 0,
                             },
                           }}
                         sx={{
@@ -203,7 +211,7 @@ function ResultShow() {
                                 fontWeight: 'light',
                             },
                             }}
-                        height={200}
+                        height={300}
                         />
                     </div>
                 )}

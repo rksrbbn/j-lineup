@@ -288,6 +288,9 @@ export const songs = [
         name: 'Buah Masa Depan (Mirai no Kajitsu)',
     },
     {
+        name: 'Masa Depan yang Menyilaukan Mata (Mirai ga Me ni Shimiru)',
+    },
+    {
         name: 'Viva! Hurricane',
     },
     {

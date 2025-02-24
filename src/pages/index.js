@@ -61,11 +61,16 @@ function Pages()
                              <Typography id="modal-modal-title" variant="h6" component="h2" style={{marginTop:'5px'}}>
                                 [Information]
                             </Typography>
-                            <small>Follow me for new updates! also for bugs report, advice and songs request, feel free to mention or DM me at <a href='https://x.com/rksrbbn'>here.</a></small>
+                            <small>Follow me for new updates! also for bugs report, advice and songs request, feel free to mention or DM me at <a href='https://x.com/_hanransha_'>here.</a></small>
                             <Typography id="modal-modal-title" variant="h6" component="h2" style={{marginTop:'10px'}}>
                                 [Updates]
                             </Typography>
                             <ul>
+                                <li>
+                                <small id="modal-modal-description" sx={{ mt: 2 }}>
+                                    [24/02/2025 09:20PM] Add New listed songs & new generation members. Alson update member's profile.
+                                </small>
+                                </li>
                                 <li>
                                 <small id="modal-modal-description" sx={{ mt: 2 }}>
                                     [18/06/2024 10:00PM] Add Lineup Stats Feature.

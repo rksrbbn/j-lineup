@@ -551,7 +551,7 @@ export const members = [
   "generation": 11,
   "picture": 'assets/member/alya_amanda.webp', 
   "graduated": false,
-  "trainee": true,
+  "trainee": false,
   "popularity": 7.5, // out of 10
   "vocal": 7.5, // out of 10
   "dance": 8, // out of 10
@@ -569,7 +569,7 @@ export const members = [
   "generation": 11,
   "picture": 'assets/member/anindya_ramadhani.webp', 
   "graduated": false,
-  "trainee": true,
+  "trainee": false,
   "popularity": 7.5, // out of 10
   "vocal": 7.5, // out of 10
   "dance": 8, // out of 10
@@ -623,7 +623,7 @@ export const members = [
   "generation": 11,
   "picture": 'assets/member/cathleen_nixie.webp', 
   "graduated": false,
-  "trainee": true,
+  "trainee": false,
   "popularity": 7.5, // out of 10
   "vocal": 7.5, // out of 10
   "dance": 8, // out of 10
@@ -641,7 +641,7 @@ export const members = [
   "generation": 11,
   "picture": 'assets/member/celline_thefani.webp', 
   "graduated": false,
-  "trainee": true,
+  "trainee": false,
   "popularity": 7.5, // out of 10
   "vocal": 7.5, // out of 10
   "dance": 8, // out of 10
@@ -659,7 +659,7 @@ export const members = [
   "generation": 11,
   "picture": 'assets/member/chelsea_davina.webp', 
   "graduated": false,
-  "trainee": true,
+  "trainee": false,
   "popularity": 7.5, // out of 10
   "vocal": 7.5, // out of 10
   "dance": 8, // out of 10
@@ -677,7 +677,7 @@ export const members = [
   "generation": 11,
   "picture": 'assets/member/cynthia_yaputera.webp', 
   "graduated": false,
-  "trainee": true,
+  "trainee": false,
   "popularity": 7.5, // out of 10
   "vocal": 7.5, // out of 10
   "dance": 8, // out of 10
@@ -695,7 +695,7 @@ export const members = [
   "generation": 11,
   "picture": 'assets/member/dena_natalia.webp', 
   "graduated": false,
-  "trainee": true,
+  "trainee": false,
   "popularity": 7.5, // out of 10
   "vocal": 7.5, // out of 10
   "dance": 8, // out of 10
@@ -713,7 +713,7 @@ export const members = [
   "generation": 11,
   "picture": 'assets/member/desy_natalia.webp', 
   "graduated": false,
-  "trainee": true,
+  "trainee": false,
   "popularity": 7.5, // out of 10
   "vocal": 7.5, // out of 10
   "dance": 8, // out of 10
@@ -749,7 +749,7 @@ export const members = [
   "generation": 11,
   "picture": 'assets/member/gendis_mayrannisa.webp', 
   "graduated": false,
-  "trainee": true,
+  "trainee": false,
   "popularity": 7.5, // out of 10
   "vocal": 7.5, // out of 10
   "dance": 8, // out of 10
@@ -821,7 +821,7 @@ export const members = [
   "generation": 11,
   "picture": 'assets/member/michelle_alexandra.webp', 
   "graduated": false,
-  "trainee": true,
+  "trainee": false,
   "popularity": 7.5, // out of 10
   "vocal": 7.5, // out of 10
   "dance": 8, // out of 10

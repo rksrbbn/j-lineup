@@ -1046,6 +1046,20 @@ export const songs = [
     {
         name: 'Kamonegix',
     },
+
+    // new song 2024
+    {
+        name: 'Belalang yang Membangkang (Ama Nojaku Batta)',
+    },
+    
+    // 2024 - 2025 SSK SONGS
+    {
+        name: 'Bibir yang telah dicuri (Nusumareta no Kuchibiru)',
+    },
+    {
+        name: '#KuSangatSuka (Sukinanda)',
+    },
+    
     
 ]
 
